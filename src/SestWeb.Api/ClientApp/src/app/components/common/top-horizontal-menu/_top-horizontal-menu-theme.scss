@@ -1,8 +1,0 @@
-@mixin sest-top-horizontal-menu-theme($theme) {
-  $accent: map-get($theme, accent);
-
-  .sest-notification .sest-notification-badge {
-    background: mat-color($accent, default);
-    color: mat-color($accent, default-contrast);
-  }
-}
