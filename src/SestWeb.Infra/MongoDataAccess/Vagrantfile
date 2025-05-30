@@ -1,0 +1,42 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+  config.vm.define "mongodb" do |mongodb|
+    mongodb.vm.box = "ubuntu/trusty64"
+    mongodb.vm.network "forwarded_port", guest: 27017, host: 27017, host_ip: "127.0.0.1"
+    mongodb.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+      vb.cpus = 4
+    end
+
+    mongodb.trigger.after :up do |trigger|
+      trigger.info = "Iniciando mongo"
+      trigger.run_remote = {inline: "sudo docker start devmongo"}
+    end
+
+        mongodb.trigger.after :halt do |trigger|
+      trigger.info = "Parando mongo"
+      trigger.run_remote = {inline: "sudo docker stop devmongo"}
+    end
+
+    mongodb.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install --assume-yes \
+                    apt-transport-https \
+                    ca-certificates \
+                    curl \
+                    software-properties-common
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+        apt-key fingerprint 0EBFCD88
+        add-apt-repository \
+                    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+                  $(lsb_release -cs) \
+                  stable"
+        apt-get update
+        apt-get install --assume-yes docker-ce
+        docker run --name devmongo -p 27017:27017 -d mongo
+    SHELL
+  end
+end

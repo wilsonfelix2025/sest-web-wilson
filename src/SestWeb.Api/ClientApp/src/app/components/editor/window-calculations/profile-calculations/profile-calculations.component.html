@@ -1,0 +1,170 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/perfis.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Cálculo de Perfis
+    </div>
+</div>
+
+<mat-dialog-content class="page-profile-calculations">
+
+    <div class="sest-flex-row">
+
+        <div class="sest-flex-column sest-flex-2">
+            <div class="sest-flex-row sest-mb-1">
+                <div class="sest-p-1 sest-mt-1 sest-flex-1 sest-flex-column sest-small-border"
+                    [ngClass]="{'sest-input-error': nomeCalculo.tooltip.length > 0 }" [matTooltip]="nomeCalculo.tooltip"
+                    matTooltipClass="background-red">
+                    <h3 class="sest-border-title">Nome do cálculo:</h3>
+                    <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100" [(ngModel)]="nomeCalculo.value">
+                </div>
+                <div
+                    class="sest-p-1 sest-ml-3 sest-mt-1 sest-flex-1 sest-align-center sest-flex-column sest-small-border">
+                    <mat-slide-toggle class="sest-light-gray sest-py-1 sest-px-1" [(ngModel)]="trechoEspecifico">
+                        Correlações por trecho específico</mat-slide-toggle>
+                </div>
+            </div>
+
+            <div class="sest-flex-row sest-mt-3">
+                <div class="sest-flex-column sest-flex-1 sest-mt-1 sest-pb-2 sest-px-2 sest-small-border">
+                    <h3 class="sest-border-title">Correlações <b>base:</b></h3>
+
+                    <div class="sest-flex-row sest-p-1">
+                        <div class="sest-flex-column sest-flex-1 max-width-input">
+
+                            <div class="sest-p-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border"
+                                *ngFor="let input of baseCorrelations">
+                                <h3 class="sest-border-title">{{input.title}}:</h3>
+                                <mat-select class="sest-px-1 sest-w-100"
+                                    (selectionChange)="mudouBase($event.value, input)" [(ngModel)]="input.value">
+                                    <mat-option>Selecione</mat-option>
+                                    <mat-option *ngFor="let el of input.list" [value]="el">
+                                        {{el.nome}}
+                                    </mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+
+                        <div
+                            class="sest-ml-3 sest-p-1 sest-flex-column sest-flex-2 sest-small-border max-width-parameters">
+                            <h3 class="sest-border-title">Parâmetros:</h3>
+                            <hot-table #tableBase [options]="baseOptions" [data]="baseDataset"
+                                [colHeaders]="baseColHeaders" [columns]="baseColumnsTypes"></hot-table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sest-flex-column sest-flex-1 sest-p-1 sest-mt-1 sest-ml-3 sest-small-border">
+                    <h3 class="sest-border-title">Perfis de entrada:</h3>
+
+                    <div class="sest-p-1 sest-mx-2 sest-my-2 sest-flex-column sest-small-border"
+                        [ngClass]="{'sest-input-error': input.tooltip.length > 0 }" [matTooltip]="input.tooltip"
+                        matTooltipClass="background-red" *ngFor="let input of inputProfiles">
+                        <h3 class="sest-border-title">{{input.title}}:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="input.value">
+                            <mat-option>Selecione</mat-option>
+                            <mat-option *ngFor="let el of input.list" [value]="el">
+                                {{el.nome}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div [hidden]="!trechoEspecifico">
+
+        <div class="sest-flex-row sest-mt-3">
+            <div class="sest-flex-column sest-flex-1 sest-mt-1 sest-p-1 sest-mb-0 sest-small-border">
+                <h3 class="sest-border-title">Correlações por <b>trecho específico:</b></h3>
+
+                <div class="sest-flex-row sest-flex-1 sest-p-1 sest-my-2">
+                    <div class="sest-flex-column sest-flex-1 sest-w-100 max-width-input">
+
+                        <div class="sest-p-1 sest-mb-2 sest-flex-column sest-flex-1 sest-small-border max-height-input">
+                            <h3 class="sest-border-title">Perfil:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="profileSelected"
+                                (selectionChange)="perfilChanged()">
+                                <mat-option disabled>Selecione</mat-option>
+                                <mat-option *ngFor="let profile of baseCorrelations" [value]="profile">
+                                    {{profile.title}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="sest-p-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border max-height-input"
+                            [ngClass]="{'sest-input-error': topo.tooltip.length > 0 }" [matTooltip]="topo.tooltip"
+                            matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Topo (PM):</h3>
+                            <input class="sest-border-0 sest-py-1 sest-px-1 sest-w-100" [(ngModel)]="topo.value">
+                        </div>
+                        <div class="sest-p-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border max-height-input"
+                            [ngClass]="{'sest-input-error': base.tooltip.length > 0 }" [matTooltip]="base.tooltip"
+                            matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Base (PM):</h3>
+                            <input class="sest-border-0 sest-py-1 sest-px-1 sest-w-100" [(ngModel)]="base.value">
+                        </div>
+                        <div class="sest-p-1 sest-mt-2 sest-flex-column sest-flex-1 sest-small-border max-height-input"
+                            [ngClass]="{'sest-input-error': correlationSelected.tooltip.length > 0 }"
+                            [matTooltip]="correlationSelected.tooltip" matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Correlação:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="correlationSelected.value">
+                                <mat-option disabled>Selecione</mat-option>
+                                <mat-option *ngFor="let el of profileSelected.list" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+
+                    <div class="sest-flex-column sest-px-3 sest-w-100 max-width-button">
+                        <div class="sest-flex-row btn-height">
+                            <button (click)="addLine()" mat-stroked-button color="primary" class="sest-w-100 btn-medium"
+                                [disabled]="!specificValid">
+                                <div class="sest-flex-column sest-center sest-mt-1">
+                                    <mat-icon class="sest-center">add_circle</mat-icon>
+                                    Adicionar
+                                </div>
+                            </button>
+                        </div>
+                        <div class="sest-flex-row btn-height sest-mt-3">
+                            <button (click)="removeLine()" mat-stroked-button class="sest-w-100 btn-medium"
+                                [ngClass]="{ 'color-dark-red': lineSelected.length > 0 }"
+                                [disabled]='lineSelected.length === 0'>
+                                <div class="sest-flex-column sest-center sest-mt-1">
+                                    <mat-icon class="sest-center">cancel</mat-icon>
+                                    Remover
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sest-p-1 sest-flex-column sest-w-100 sest-mr-1 sest-small-border">
+                        <hot-table #tableA [options]="specificAOptions" [data]="specificADataset"
+                            [colHeaders]="specificAColHeaders" [columns]="specificAColumnsTypes"></hot-table>
+                    </div>
+                    <div class="sest-p-1 sest-flex-column sest-w-100 sest-ml-1 sest-small-border">
+                        <hot-table #tableB [options]="specificBOptions" [data]="specificBDataset"
+                            [colHeaders]="specificBColHeaders" [columns]="specificBColumnsTypes"></hot-table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="!isValid || loading">
+        Ok
+    </button>
+</mat-dialog-actions>

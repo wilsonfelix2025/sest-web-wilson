@@ -1,0 +1,10 @@
+@mixin sest-layout-loader-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .sest-layout-loader {
+    background: mat-color($background, background);
+    color: mat-color($foreground, text);
+  }
+}
+

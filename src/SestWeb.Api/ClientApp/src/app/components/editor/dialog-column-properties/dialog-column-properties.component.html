@@ -1,0 +1,156 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+  class="sest-dialog-title sest-flex-row">
+  <div class="sest-flex-0">
+    <img src="assets/images/icons/importar.svg">
+  </div>
+  <div class="sest-flex-1 sest-mx-3">
+    Propriedades
+  </div>
+</div>
+<mat-dialog-content>
+  <div class="sest-flex-column sest-small-border sest-p-1 sest-mt-1 width-300">
+    <h3 class="sest-border-title">Modo de Importação:</h3>
+    <mat-accordion>
+      <mat-expansion-panel class="mat-elevation-z0 panel" [expanded]="importTypeSelected === 'new'"
+        [hideToggle]="tableType === 'traj'" (opened)="importTypeSelected = 'new'" (closed)="closePanel('new')"
+        [disabled]="newDisabled">
+        <mat-expansion-panel-header class="sest-border-0"
+          [ngClass]="(importTypeSelected === 'new')? 'bg-gray':'bg-white'">
+          <mat-panel-title class="sest-ml-2">
+            <img src="assets/images/icons/new.svg" class="icon sest-mr-1"
+              [ngClass]="{'sest-disabled-opacity': newDisabled}">
+            Criar novo {{ tableType === 'traj' ? '/ Substituir' : ''}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <ng-template matExpansionPanelContent>
+          <div class="sest-flex-row sest-py-1">
+            <div class="sest-flex-column">
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Nome: </span>
+              <span class="sest-m-1" *ngIf="tableType !== 'traj'">Tipo: </span>
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Unidade: </span>
+            </div>
+            <div class="sest-flex-column sest-flex-1 sest-ml-2 sest-scroll">
+              <input [(ngModel)]="new.name.value" class="sest-small-border sest-p-1 sest-m-1"
+                [ngClass]="{'sest-input-error': new.name.tooltip.length > 0 }" [matTooltip]="new.name.tooltip"
+                matTooltipClass="background-red" *ngIf="tableType === 'profile'">
+              <select class="sest-small-border sest-p-1 sest-m-1" matTooltipClass="background-red"
+                (change)="changedObject($event.target.value,new)"
+                [ngClass]="{'sest-input-error': new.type.tooltip.length > 0 }" [matTooltip]="new.type.tooltip"
+                [(ngModel)]="new.type.value" *ngIf="tableType === 'profile'">
+                <option *ngFor="let m of mnemonicList" [value]="m">{{profilesTypes[m]['descrição']}}
+                </option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" matTooltipClass="background-red"
+                [ngClass]="{'sest-input-error': new.type.tooltip.length > 0 }" [matTooltip]="new.type.tooltip"
+                [(ngModel)]="new.type.value" *ngIf="tableType === 'litho'">
+                <option *ngFor="let l of currCaseAvailableLithoTypes" [value]="l">{{l}}</option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="new.unit.value"
+                *ngIf="tableType === 'profile' && new.type.value !== undefined">
+                <option *ngFor="let unit of profilesTypes[new.type.value].grupoUnidade.unidadesDeMedida"
+                  [ngValue]="unit">
+                  {{unit['símbolo']}}</option>
+              </select>
+            </div>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-divider></mat-divider>
+      <mat-expansion-panel class="mat-elevation-z0 panel" [expanded]="importTypeSelected === 'append'"
+        [hideToggle]="tableType === 'traj'" (opened)="importTypeSelected = 'append'" (closed)="closePanel('append')"
+        [disabled]="appendDisabled">
+        <mat-expansion-panel-header class="sest-border-0"
+          [ngClass]="(importTypeSelected === 'append')? 'bg-gray':'bg-white'">
+          <mat-panel-title class="sest-ml-2">
+            <img src="assets/images/icons/append.svg" class="icon sest-mr-1"
+              [ngClass]="{'sest-disabled-opacity': appendDisabled}">
+            Adicionar em existente
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <ng-template matExpansionPanelContent>
+          <div class="sest-flex-row sest-py-1">
+            <div class="sest-flex-column">
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Nome: </span>
+              <span class="sest-m-1" *ngIf="tableType === 'litho'">Tipo: </span>
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Unidade: </span>
+            </div>
+            <div class="sest-flex-column sest-flex-1 sest-ml-2 sest-scroll">
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="append.obj.value"
+                (change)="changedObject($event.target.value,append)" *ngIf="tableType === 'profile'">
+                <option *ngFor="let profile of currCaseProfilesList" [ngValue]="profile">{{profile.name}}</option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="append.obj.value"
+                *ngIf="tableType === 'litho'">
+                <option *ngFor="let litho of currCaseLithoList" [ngValue]="litho">{{litho.type}}</option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="append.unit.value"
+                *ngIf="tableType === 'profile' && append.obj.value !== undefined">
+                <option *ngFor="let unit of profilesTypes[append.obj.value.mnemonic].grupoUnidade.unidadesDeMedida"
+                  [ngValue]="unit">
+                  {{unit['símbolo']}}</option>
+              </select>
+            </div>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-divider></mat-divider>
+      <mat-expansion-panel class="mat-elevation-z0 panel" [expanded]="importTypeSelected === 'overwrite'"
+        (opened)="importTypeSelected = 'overwrite'" (closed)="closePanel('overwrite')" [disabled]="overwriteDisabled">
+        <mat-expansion-panel-header class="sest-border-0"
+          [ngClass]="(importTypeSelected === 'overwrite')? 'bg-gray':'bg-white'">
+          <mat-panel-title class="sest-ml-2">
+            <img src="assets/images/icons/overwrite.svg" class="icon sest-mr-1"
+              [ngClass]="{'sest-disabled-opacity': overwriteDisabled}">
+            Sobrescrever
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-divider></mat-divider>
+        <ng-template matExpansionPanelContent>
+          <div class="sest-flex-row sest-py-1">
+            <div class="sest-flex-column">
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Nome: </span>
+              <span class="sest-m-1" *ngIf="tableType === 'litho'">Tipo: </span>
+              <span class="sest-m-1" *ngIf="tableType === 'profile'">Unidade: </span>
+              <span class="sest-m-1">Topo: </span>
+              <span class="sest-m-1">Base: </span>
+            </div>
+            <div class="sest-flex-column sest-flex-1 sest-ml-2 sest-scroll">
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="overwrite.obj.value"
+                (change)="changedObject($event.target.value,overwrite)" *ngIf="tableType === 'profile'">
+                <option *ngFor="let profile of currCaseProfilesList" [ngValue]="profile">{{profile.name}}</option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="overwrite.obj.value"
+                *ngIf="tableType === 'litho'">
+                <option *ngFor="let litho of currCaseLithoList" [ngValue]="litho">{{litho.type}}</option>
+              </select>
+              <select class="sest-small-border sest-p-1 sest-m-1" [(ngModel)]="overwrite.unit.value"
+                *ngIf="tableType === 'profile' && overwrite.obj.value !== undefined">
+                <option *ngFor="let unit of profilesTypes[overwrite.obj.value.mnemonic].grupoUnidade.unidadesDeMedida"
+                  [ngValue]="unit">
+                  {{unit['símbolo']}}</option>
+              </select>
+              <input class="sest-small-border sest-p-1 sest-m-1 sest-w-auto" [(ngModel)]="overwrite.top.value"
+                [ngClass]="{'sest-input-error': overwrite.top.tooltip.length > 0 }" type="number" step="any"
+                [matTooltip]="overwrite.top.tooltip" matTooltipClass="background-red">
+              <input class="sest-small-border sest-p-1 sest-m-1 sest-w-auto" [(ngModel)]="overwrite.bottom.value"
+                [ngClass]="{'sest-input-error': overwrite.bottom.tooltip.length > 0 }" type="number" step="any"
+                [matTooltip]="overwrite.bottom.tooltip" matTooltipClass="background-red">
+            </div>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close (click)="onNoClick()" class="sest-light-gray">
+    Cancelar
+  </button>
+  <div class="sest-flex-1 sest-px-1"></div>
+  <button (click)="submit()" mat-stroked-button color="primary" type="submit" [disabled]="!canSubmit()">
+    Ok
+  </button>
+</mat-dialog-actions>

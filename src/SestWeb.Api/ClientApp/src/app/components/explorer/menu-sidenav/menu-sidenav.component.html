@@ -1,0 +1,132 @@
+<div fxLayout="column" fxFlexFill>
+
+    <div class="sest-sidnav-menu sest-hide-scrollbars" fxFlex="nogrow noshrink">
+        <mat-form-field class="sest-explorer__search" color="primary">
+            <input matInput placeholder="Pesquisar" [(ngModel)]="userSearch"
+                (keyup)="search.search(userSearch, $event)">
+            <mat-icon matSuffix *ngIf="userSearch" (click)="clearSearch()" style="cursor: pointer">close</mat-icon>
+            <mat-icon matSuffix (click)="search.search(userSearch)" style="cursor: pointer">search</mat-icon>
+        </mat-form-field>
+        <div class="tree-content" [hidden]="search.isSearching">
+            <mat-expansion-panel *ngFor="let unit of explorerData.operationalUnits" matBadge="{{unit.filesCount}}"
+                matBadgePosition="above after" [matBadgeHidden]="!unit.filesCount || unit.collapsed === false"
+                [expanded]="unit.collapsed === false">
+                <mat-expansion-panel-header class="explorer-tree lista-unidade" [collapsedHeight]="'40px'"
+                    [expandedHeight]="'40px'" (click)="handleTreeClick(unit, 1)">
+                    <mat-panel-title>
+                        <mat-icon [class.fas]="unit.children.length" [class.far]="!unit.children.length"
+                            [class.fa-folder]="unit.collapsed !== false"
+                            [class.fa-folder-open]="unit.collapsed === false"></mat-icon>
+                        <h3>{{unit.name}}</h3>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ng-container *ngIf="unit.opened === true">
+                    <mat-expansion-panel *ngFor="let oilfield of unit.children" matBadge="{{oilfield.filesCount}}"
+                        matBadgePosition="above after"
+                        [matBadgeHidden]="!oilfield.filesCount || oilfield.collapsed === false"
+                        [expanded]="oilfield.collapsed === false">
+                        <mat-expansion-panel-header class="explorer-tree lista-campo" [collapsedHeight]="'40px'"
+                            [expandedHeight]="'40px'" (click)="handleTreeClick(oilfield, 2)">
+                            <mat-panel-title>
+                                <mat-icon [class.fas]="oilfield.children.length" [class.far]="!oilfield.children.length"
+                                    [class.fa-folder]="oilfield.collapsed !== false"
+                                    [class.fa-folder-open]="oilfield.collapsed === false"></mat-icon>
+                                <h3>{{oilfield.name}}</h3>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <ng-container *ngIf="oilfield.opened === true">
+                            <mat-expansion-panel *ngFor="let well of oilfield.children" matBadge="{{well.filesCount}}"
+                                matBadgePosition="above after"
+                                [matBadgeHidden]="!well.filesCount || well.collapsed === false"
+                                [expanded]="well.collapsed === false">
+                                <mat-expansion-panel-header class="explorer-tree lista-poco" [collapsedHeight]="'40px'"
+                                    [expandedHeight]="'40px'" (click)="handleTreeClick(well, 3)">
+                                    <mat-panel-title>
+                                        <mat-icon [class.fas]="well.children.length" [class.far]="!well.children.length"
+                                            [class.fa-folder]="well.collapsed !== false"
+                                            [class.fa-folder-open]="well.collapsed === false"></mat-icon>
+                                        <h3>{{well.name}}</h3>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                            </mat-expansion-panel>
+                        </ng-container>
+                    </mat-expansion-panel>
+                </ng-container>
+            </mat-expansion-panel>
+        </div>
+        <div class="search-content" [hidden]="!search.isSearching">
+            <div *ngIf="!search.searchIsReady" class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+            <div class="units-section" *ngIf="search.searchResults['units'].length > 0">
+                <h2>Unidades operacionais</h2>
+                <div class="result" *ngFor="let item of search.searchResults['units']"
+                    (dblclick)="selectSearchResult(item, item.pathNames)">
+                    <div class="first-row">
+                        <mat-icon [class.fas]="item.children.length" [class.far]="!item.children.length"
+                            class="fa-folder">
+                        </mat-icon>
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="second-row">
+                        <h3>{{item.path}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="oilfields-section" *ngIf="search.searchResults['oilfields'].length > 0">
+                <h2>Campos</h2>
+                <div class="result" *ngFor="let item of search.searchResults['oilfields']"
+                    (dblclick)="selectSearchResult(item, item.pathNames)">
+                    <div class="first-row">
+                        <mat-icon [class.fas]="item.children.length" [class.far]="!item.children.length"
+                            class="fa-folder">
+                        </mat-icon>
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="second-row">
+                        <h3>{{item.path}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="wells-section" *ngIf="search.searchResults['wells'].length > 0">
+                <h2>Poços</h2>
+                <div class="result" *ngFor="let item of search.searchResults['wells']"
+                    (dblclick)="selectSearchResult(item, item.pathNames)">
+                    <div class="first-row">
+                        <mat-icon [class.fas]="item.children.length" [class.far]="!item.children.length"
+                            class="fa-folder">
+                        </mat-icon>
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="second-row">
+                        <h3>{{item.path}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="files-section" *ngIf="search.searchResults['files'].length > 0">
+                <h2>Casos</h2>
+                <div class="result" *ngFor="let item of search.searchResults['files']" (dblclick)="openFile(item)">
+                    <div class="first-row">
+                        <mat-icon class="fa fa-file"></mat-icon>
+                        <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="second-row">
+                        <h3>{{item.path}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <mat-toolbar class="sest-side-menu-bootom-toolbar">
+        <mat-toolbar-row class="margin-top" fxLayout="row">
+            <span fxFlex></span>
+            <!-- <a mat-icon-button (click)="sidenav.close()">
+                <mat-icon>chevron_left</mat-icon>
+            </a> -->
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>

@@ -1,0 +1,179 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/gradientes.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Cálculo de Gradientes
+    </div>
+</div>
+
+<mat-dialog-content class="page-gradient-calculation">
+
+    <div class="sest-flex-row">
+        <div class="sest-flex-column sest-flex-1 sest-mt-2 sest-mx-1">
+
+            <div class="sest-flex-row">
+                <canvas #canvas width="450" height="450"></canvas>
+            </div>
+
+            <div class="sest-flex-row">
+                <div class="sest-flex-column sest-flex-2 sest-mt-3 sest-small-border">
+                    <h3 class="sest-border-title">Malha:</h3>
+
+                    <div class="sest-flex-row">
+
+                        <div class="sest-p-1 sest-my-2 sest-mr-1 sest-ml-3 sest-flex-1 sest-flex-column sest-small-border"
+                            [ngClass]="{'sest-input-error': malha.rextRint.tooltip.length > 0 }"
+                            [matTooltip]="malha.rextRint.tooltip" matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Rext/Rint:</h3>
+                            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                                [(ngModel)]="malha.rextRint.value">
+                        </div>
+
+                        <div class="sest-p-1 sest-my-2 sest-mr-3 sest-ml-2 sest-flex-1 sest-flex-column sest-small-border"
+                            [ngClass]="{'sest-input-error': malha.rmaxRmin.tooltip.length > 0 }"
+                            [matTooltip]="malha.rmaxRmin.tooltip" matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Inc RMax/RMin:</h3>
+                            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                                [(ngModel)]="malha.rmaxRmin.value">
+                        </div>
+
+                    </div>
+
+                    <div class="sest-flex-row">
+
+                        <div class="sest-p-1 sest-my-2 sest-mr-1 sest-ml-3 sest-mb-3 sest-flex-1 sest-flex-column sest-small-border"
+                            [ngClass]="{'sest-input-error': malha.numAng.tooltip.length > 0 }"
+                            [matTooltip]="malha.numAng.tooltip" matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Nun div ang:</h3>
+                            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                                [(ngModel)]="malha.numAng.value">
+                        </div>
+
+                        <div class="sest-p-1 sest-my-2 sest-mr-3 sest-ml-2 sest-mb-3 sest-flex-1 sest-flex-column sest-small-border"
+                            [ngClass]="{'sest-input-error': malha.numRad.tooltip.length > 0 }"
+                            [matTooltip]="malha.numRad.tooltip" matTooltipClass="background-red">
+                            <h3 class="sest-border-title">Num div rad:</h3>
+                            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                                [(ngModel)]="malha.numRad.value">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sest-flex-column sest-flex-1 sest-mt-1 sest-mx-1 sest-p-1">
+
+            <div class="sest-flex-row">
+
+                <div class="sest-flex-column sest-flex-1 sest-small-border">
+                    <h3 class="sest-border-title">Modelo de Análise:</h3>
+
+                    <div class="sest-flex-row">
+                        <div class="sest-p-1 sest-ml-3 sest-my-2 sest-flex-1 sest-flex-column sest-small-border">
+                            <h3 class="sest-border-title">Modelos:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="modeloSelecionado.value">
+                                <mat-option disabled>Selecione</mat-option>
+                                <mat-option *ngFor="let el of tipoModelos" [value]="el">
+                                    {{el.label}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+
+                        <div class="sest-mb-2 sest-py-2 sest-pl-2 sest-pr-3 sest-flex-colum sest-text-align-center">
+                            <button mat-stroked-button color="primary" class="sest-w-100"
+                                (click)="openWindowParametrosPoroelasticos()">
+                                Parâmetros Poroelásticos
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sest-p-1 sest-m-2 sest-flex-1 sest-flex-column sest-small-border"
+                        [ngClass]="{'sest-input-error': areaPlastificada.tooltip.length > 0 }"
+                        [matTooltip]="areaPlastificada.tooltip" matTooltipClass="background-red">
+                        <h3 class="sest-border-title">Área Plastificada (%):</h3>
+                        <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                            [(ngModel)]="areaPlastificada.value">
+                    </div>
+
+                    <div class="sest-p-1 sest-m-2 sest-flex-1 sest-flex-column sest-small-border">
+                        <h3 class="sest-border-title">Critério de ruptura:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="criterioSelecionado.value">
+                            <mat-option disabled>Selecione</mat-option>
+                            <mat-option *ngFor="let el of tipoCriterio" [value]="el">
+                                {{el.label}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+
+                    <div class="sest-p-1 sest-m-2 sest-flex-1 sest-flex-column sest-small-border"
+                        [ngClass]="{'sest-input-error': tempoMin.tooltip.length > 0 }" [matTooltip]="tempoMin.tooltip"
+                        matTooltipClass="background-red">
+                        <h3 class="sest-border-title">Tempo (min):</h3>
+                        <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100" [(ngModel)]="tempoMin.value"
+                            [disabled]="modeloSelecionado.value.name !== 'Poroelastico'"
+                            [ngClass]="{'input-disable-style': modeloSelecionado.value.name !== 'Poroelastico'}">
+                    </div>
+
+                    <div class="sest-small-border sest-p-1 sest-m-2 sest-flex-colum" *ngFor="let input of checkboxes">
+                        <mat-slide-toggle [(ngModel)]="input.value" class="sest-light-gray sest-mx-2 sest-py-1"
+                            [disabled]="input.soPoroelastico && (modeloSelecionado.value.name !== 'Poroelastico' || !checkboxes[0].value)">
+                        </mat-slide-toggle>
+                        {{ input.label }}
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sest-flex-column sest-flex-1">
+
+            <div class="sest-flex-row">
+                <div class="sest-flex-column sest-flex-1 sest-small-border sest-mt-2 sest-mx-1 sest-p-1 sest-w-350">
+                    <h3 class="sest-border-title">Perfis de entrada:</h3>
+                    <div class="input-list sest-flex-row">
+                        <div class="sest-p-1 sest-py-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border input-item"
+                            *ngFor="let input of perfisEntrada" [matTooltip]="input.tooltip"
+                            [ngClass]="{'sest-input-error': input.tooltip.length > 0 }">
+                            <h3 class="sest-border-title">{{input.title}}:</h3>
+                            <mat-select class="sest-px-1" [(ngModel)]="input.value">
+                                <mat-option disabled>Selecione</mat-option>
+                                <mat-option *ngFor="let el of input.list" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sest-p-1 sest-mt-3 sest-mx-1 sest-flex-column sest-small-border"
+                [ngClass]="{'sest-input-error': nomeCalculo.tooltip.length > 0 }" [matTooltip]="nomeCalculo.tooltip"
+                matTooltipClass="background-red">
+                <h3 class="sest-border-title">Nome do cálculo:</h3>
+                <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100" [(ngModel)]="nomeCalculo.value">
+            </div>
+
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="!isValid || loading">
+        Ok
+    </button>
+</mat-dialog-actions>
+<div class="sest-dialog-bottom sest-flex-row" cdkDrag cdkDragRootElement=".cdk-overlay-pane"
+    cdkDragBoundary=".mat-typography" cdkDragHandle></div>

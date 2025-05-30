@@ -1,0 +1,13 @@
+@import "~sass/essential";
+
+.import-types {
+  min-height: 80px;
+  max-height: 80px;
+}
+
+.max-import-types {
+  max-height: 80px;
+}
+input[type='file'] {
+  display: none
+}

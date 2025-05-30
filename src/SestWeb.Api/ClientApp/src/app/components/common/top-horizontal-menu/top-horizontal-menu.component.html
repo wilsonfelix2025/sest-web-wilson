@@ -1,0 +1,14 @@
+<mat-toolbar class="sest-toolbar sest-pocoweb-menu">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="start center">
+        <img src="assets/images/logo_syst_white.svg" class="sest-toolbar-brand" alt="GTEP">
+        <span fxFlex></span>
+        <app-switcher class="app-switcher"></app-switcher>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar class="sest-toolbar sest-toolbar-right" [ngClass]="{ 'sest-transparent-toolbar': transparent }">
+    <mat-toolbar-row>
+        <span fxFlex></span>
+        <sest-user-menu></sest-user-menu>
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,21 @@
+@import "~sass/essential";
+
+.maxWidth-380 {
+    max-width: 380px;
+}
+
+.handsontable .wtHolder {
+    width: auto !important;
+}
+
+.sest-min-width {
+    width: 50%;
+}
+
+.sest-max-width {
+    max-width: 10%
+}
+
+::ng-deep .inputRelacao span {
+    font-weight: 600 !important;
+}

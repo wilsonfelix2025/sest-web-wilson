@@ -1,0 +1,119 @@
+@mixin sest-loader($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  $sest-logo-size: 60px;
+  $sest-logo-factor: 0.8;
+  $sest-logo-inner-factor: 0.2;
+  $sest-logo-inner-color: mat-color($primary);
+  $sest-logo-circle: $sest-logo-size * $sest-logo-factor;
+  $sest-logo-inner-circle: $sest-logo-size * $sest-logo-inner-factor;
+  $sest-animation-time: 6s;
+
+  .app-loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1 !important;
+    > span {
+      display: block;
+      font-size: .875em;
+      margin-top: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .sest-logo {
+    display: inline-block;
+    margin-top: 24px;
+    width: $sest-logo-size;
+    height: $sest-logo-size;;
+    animation: sest-fade-in 400ms .4s;
+    animation-fill-mode: both;
+  }
+
+  .sest-logo__circles {
+    width: $sest-logo-size;
+    height: $sest-logo-size;
+    position: relative;
+    animation: sest-logo__circles $sest-animation-time infinite;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    &:before {
+      content: "";
+      width: $sest-logo-size * 0.66;
+      height: $sest-logo-size * 0.66;
+      position: absolute;
+      border-radius: 50%;
+      top:  ($sest-logo-size - $sest-logo-size * 0.66) / 2;
+      left: ($sest-logo-size - $sest-logo-size * 0.66) / 2;
+      z-index: 1;
+    }
+  }
+
+  .sest-logo__circle {
+    width: $sest-logo-circle;
+    height: $sest-logo-circle;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(to left, rgba(mat-color($accent), 1) 0%, rgba(mat-color($accent), 0) 90%);
+    animation: ani1 $sest-animation-time infinite ease-in-out;
+    z-index: 2;
+    // -webkit-backface-visibility: hidden;
+  }
+
+  .sest-logo__circle--inner {
+    width: $sest-logo-inner-circle;
+    height: $sest-logo-inner-circle;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background: $sest-logo-inner-color;
+    padding: 2px;
+  }
+
+  .sest-logo__circle--bottom {
+    bottom: 0;
+    left: ($sest-logo-size - $sest-logo-circle)/2;
+  }
+  .sest-logo__circle--top {
+    left: ($sest-logo-size - $sest-logo-circle)/2;
+    background: linear-gradient(to right, rgba(mat-color($accent), 1) 0%, rgba(mat-color($accent), 0) 90%);
+  }
+  .sest-logo__circle--left {
+    top: ($sest-logo-size - $sest-logo-circle)/2;
+    background: linear-gradient(to top, rgba(mat-color($accent), 1) 0%, rgba(mat-color($accent), 0) 90%);
+  }
+  .sest-logo__circle--right {
+    top: ($sest-logo-size - $sest-logo-circle)/2;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(mat-color($accent), 1) 0%, rgba(mat-color($accent), 0) 90%);
+  }
+
+  /**
+  * Animations
+  */
+  @keyframes sest-fade-in {
+    from {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes sest-logo__circles {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+}

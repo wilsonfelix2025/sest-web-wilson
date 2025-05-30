@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="muparser.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="muparser.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EstilosVisuais\" />
+    <Folder Include="SistemasUnidades\Base\" />
+    <Folder Include="SistemasUnidades\Grupos\Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="CoreHtmlToImage" Version="1.0.6" />
+    <PackageReference Include="FluentValidation" Version="8.6.2" />
+    <PackageReference Include="MathNet.Numerics" Version="4.11.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="SevenZip" Version="19.0.0" />
+  </ItemGroup>
+
+</Project>

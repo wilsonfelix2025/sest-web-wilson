@@ -1,0 +1,60 @@
+@import "~sass/essential";
+
+.prevent-overflow {
+    overflow: hidden;
+}
+
+$project: map-get($mat-petro, 600);
+$monitoring: map-get($mat-petro, 800);
+$correlaction: map-get($mat-petro, 900);
+
+.Projeto  {
+  color: $project !important;
+}
+.Monitoramento  {
+  color: $monitoring !important;
+}
+.Retroanalise  {
+  color: $correlaction !important;
+}
+
+.well-type-container {
+  display: flex;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .mat-radio-group {
+    display: flex;
+  }
+
+  .well-type {
+    flex: 1 0;
+    margin: 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .well-type-entries {
+      display: flex;
+      flex-direction: column;
+      
+      &.empty {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      mat-radio-button {
+        padding: 5px 0
+      }
+    }
+  }
+}

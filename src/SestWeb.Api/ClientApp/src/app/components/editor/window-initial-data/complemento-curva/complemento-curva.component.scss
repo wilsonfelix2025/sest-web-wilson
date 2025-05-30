@@ -1,0 +1,66 @@
+@import "~sass/essential";
+
+.customInfoButton {
+    font-size: 23px !important;
+    vertical-align: top;
+    line-height: 30px !important;
+    cursor: pointer;
+}
+.customTooltipText {
+    font-size: 11px;
+    text-align: inherit;
+    color: $gray-700;
+}
+::ng-deep.mat-menu-panel {
+  max-width: none !important;
+
+}
+
+.w-medium {
+    width: 100px;
+}
+
+.w-image {
+    width: 503px;
+    padding: 0 10px;
+}
+
+.pontos-selecionados {
+    p{
+        line-height: 37px;
+        margin: 0 !important;
+        float: left;
+    }
+    
+    span{
+        float: right;
+    }
+}
+
+.sest-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+.info-perfil {
+    p {
+        font-size: 12px !important;
+        margin: 0 !important;
+        line-height: auto;
+        float: left;
+    }
+    span{
+        float: right;
+        font-weight: 700;
+        color: $gray-700;
+        i {
+            color: $gray-400 !important;
+            font-weight: lighter !important;
+        }
+    }
+    .adjust-max{
+        max-width: 170px;
+        min-width: 170px;
+        margin-right: 60px;
+    }
+}

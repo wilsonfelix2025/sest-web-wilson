@@ -1,0 +1,23 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/poros.png" width="35">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Pressão de Poros em reservatórios
+    </div>
+</div>
+
+<mat-dialog-content class="page-reservatorio">
+    <hot-table #table [options]="optionsParameters" [data]="dataset"></hot-table>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()">
+        Salvar
+    </button>
+</mat-dialog-actions>

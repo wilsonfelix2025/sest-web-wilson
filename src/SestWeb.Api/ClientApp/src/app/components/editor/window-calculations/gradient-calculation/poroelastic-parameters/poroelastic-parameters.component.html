@@ -1,0 +1,127 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/gradientes.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Parâmetros Poroelásticos
+    </div>
+</div>
+
+<mat-dialog-content class="page-poroelasticos w-page">
+
+    <div class="sest-flex-row">
+        <div class="sest-flex-column sest-flex-1 sest-mt-2 sest-mx-1 sest-p-1 sest-small-border">
+            <h3 class="sest-border-title">Propriedades do Fluido:</h3>
+
+            <div class="sest-flex-row">
+                <div *ngFor="let input of propFluido" matTooltipClass="background-red"
+                    class="sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border"
+                    [ngClass]="{'sest-input-error': input.tooltip.length > 0 }" [matTooltip]="input.tooltip">
+                    <h3 class="sest-border-title">{{input.title}}:</h3>
+                    <div class="sest-flex-row">
+                        <input class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1" [(ngModel)]="input.value">
+                        <span class="sest-light-opacity">{{input.unit}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-flex-column sest-flex-1 sest-mt-3 sest-pb-2 sest-mx-1 sest-p-1 sest-small-border">
+            <h3 class="sest-border-title">Propriedades Físico-químicas:</h3>
+
+            <div class="sest-flex-row sest-flex-wrap">
+                <div *ngFor="let input of propFisicoQuim" matTooltipClass="background-red"
+                    class="sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border"
+                    [ngClass]="{'sest-input-error': input.tooltip.length > 0 }" [matTooltip]="input.tooltip">
+                    <h3 class="sest-border-title">{{input.title}}:</h3>
+                    <div class="sest-flex-row">
+                        <input *ngIf="!input.temp" [(ngModel)]="input.value"
+                            class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1">
+                        <input *ngIf="input.temp" [(ngModel)]="temp"
+                            class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1">
+                        <span class="sest-light-opacity">{{input.unit}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sest-flex-row sest-flex-wrap">
+                <div matTooltipClass="background-red" [ngClass]="{'sest-input-error': tiposSal.tooltip.length > 0 }"
+                    [matTooltip]="tiposSal.tooltip"
+                    class="sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border">
+                    <h3 class="sest-border-title">Tipos de sal:</h3>
+                    <div class="sest-flex-row">
+                        <mat-select class="sest-px-2 sest-py-1" [(ngModel)]="tiposSal.selected">
+                            <mat-option>Selecione</mat-option>
+                            <mat-option *ngFor="let el of tiposSal.list" [value]="el">
+                                {{el.title}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div *ngFor="let input of tiposSal.solutos"
+                    class="sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border">
+                    <h3 class="sest-border-title">{{input.title}}:</h3>
+                    <div class="sest-flex-row">
+                        <input class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1 input-disable-style"
+                            [(ngModel)]="tiposSal.selected[input.value]" disabled>
+                        <span class="sest-light-opacity">{{input.unit}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-flex-column sest-flex-1 sest-mt-3 sest-pb-2 sest-p-1 sest-small-border">
+            <h3 class="sest-border-title">Propriedades Térmicas:</h3>
+
+            <div class="sest-flex-row  sest-flex-wrap">
+                <div *ngFor="let input of propTermic" matTooltipClass="background-red"
+                    class="sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column sest-small-border"
+                    [ngClass]="{'sest-input-error': input.tooltip.length > 0 }" [matTooltip]="input.tooltip">
+                    <h3 class="sest-border-title">{{input.title}}:</h3>
+                    <div class="sest-flex-row">
+                        <input *ngIf="!input.temp" [(ngModel)]="input.value"
+                            class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1">
+                        <input *ngIf="input.temp" [(ngModel)]="temp"
+                            class="sest-border-0 sest-pt-1 sest-px-1 sest-flex-1">
+                        <span class="sest-light-opacity">{{input.unit}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div [ngClass]="{'sest-input-error': litosSelecionadas.tooltip.length > 0 }"
+            [matTooltip]="litosSelecionadas.tooltip" matTooltipClass="background-red"
+            class="sest-flex-column sest-flex-1 sest-p-1 sest-mt-3 sest-small-border">
+            <h3 class="sest-border-title">Litologias selecionadas:</h3>
+            <mat-select [formControl]="litosSelecionadas.value" multiple class="sest-px-1 sest-py-1 sest-w-100">
+                <mat-select-trigger>
+                    <mat-chip-list>
+                        <mat-chip *ngFor="let lito of litosSelecionadas.value.value" [removable]="true"
+                            (removed)="onLithoRemoved(lito)">
+                            {{ lito.nome }}
+                            <mat-icon matChipRemove>cancel</mat-icon>
+                        </mat-chip>
+                    </mat-chip-list>
+                </mat-select-trigger>
+                <mat-option *ngFor="let lito of litosDoPoco" [value]="lito">{{ lito.nome }}</mat-option>
+            </mat-select>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="!isValid">
+        Ok
+    </button>
+</mat-dialog-actions>

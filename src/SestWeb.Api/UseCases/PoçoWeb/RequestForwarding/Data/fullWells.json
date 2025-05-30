@@ -1,0 +1,3793 @@
+[
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/1/",
+    "name": "Poço 1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/9/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/10/?rev=8159",
+        "name": "Projeto v2 c/ contingência",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1425/?rev=3083",
+        "name": "teste validacao",
+        "file_type": "simcarr.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1585/?rev=5751",
+        "name": "Poco3_Validacao",
+        "file_type": "score.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1991/?rev=8034",
+        "name": "teste multiplas colunas",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1992/?rev=8033",
+        "name": "teste esquematico",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "caso de teste 11235",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_project_1",
+        "file_type": "sesttr.project"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_monitoring_1",
+        "file_type": "sesttr.monitoring"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_retroanalysis_1",
+        "file_type": "sesttr.retroanalysis"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_monitoring_2",
+        "file_type": "sesttr.monitoring"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_retroanalysis_2",
+        "description": "descrição do caso",
+        "file_type": "sesttr.retroanalysis"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2046/?rev=8162",
+        "name": "sesttr_project_2",
+        "file_type": "sesttr.project"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/5/",
+    "name": "POÇO TESTE (novo1)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/5/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1337/?rev=2685",
+        "name": "exemplo_simgph",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1783/?rev=7431",
+        "name": "Fabio",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1869/?rev=7676",
+        "name": "ck OA 13-12-17",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/2/",
+    "name": "Poço 2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1348/?rev=2703",
+        "name": "Teste-SimGPH",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/6/",
+    "name": "POÇO EXEMPLO BS (BT)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1339/?rev=5783",
+        "name": "PROJ BT",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1592/?rev=5782",
+        "name": "PROJ BT (Executado)",
+        "file_type": "dadosbasicos.asbuilt"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/3/",
+    "name": "Poço Teste #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1338/?rev=2686",
+        "name": "Proj v1",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1512/?rev=4397",
+        "name": "7-LL-73-RJS-PWK",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1513/?rev=4398",
+        "name": "PROJ RIO-PWK",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1514/?rev=4399",
+        "name": "Rev 0 2015-05-07 16:20:53.048619-PWK",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1515/?rev=4405",
+        "name": "9-RO-161D-RJS (SS-80) 2015-05-07 16:22:49.641057-PWK",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1516/?rev=4410",
+        "name": "7-TMT-2D-RJS_V0 2015-05-07 16:28:59.328638-PWK",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/4/",
+    "name": "Poço #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1258/?rev=8157",
+        "name": "EXEMPLO Base Torpedo",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1259/?rev=8166",
+        "name": "Exemplo Jateado",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1260/?rev=7405",
+        "name": "exemplo perf+cimentado",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1261/?rev=1438",
+        "name": "exemplo_simgph",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1336/?rev=2683",
+        "name": "Exemplo Jateado2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1403/?rev=2974",
+        "name": "L3-NW2_V2- PerfuraÃ§Ã£o 5 fases 2015-07-01 18:06:07.891091",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1404/?rev=2975",
+        "name": "L3-NW",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1505/?rev=4387",
+        "name": "TESTE PWK",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1596/?rev=5803",
+        "name": "teste_MAPECAB 2017-04-04 19:39:08.617858",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1629/?rev=5852",
+        "name": "L3-NW",
+        "file_type": "simcon.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1798/?rev=7458",
+        "name": "caso_aranha_1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/7/",
+    "name": "POÇO EXEMPLO BS (PERF+CIM)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1340/?rev=2698",
+        "name": "PROJ PERF+CIM",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/9/",
+    "name": "POÇO EXEMPLO RIO (BT)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1342/?rev=2690",
+        "name": "PROJ RIO-BT",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/10/",
+    "name": "POÇO EXEMPLO RIO (GRAVEL)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1343/?rev=2691",
+        "name": "PROJ RIO",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1346/?rev=2700",
+        "name": "PROJ RIO 2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1347/?rev=2702",
+        "name": "PROJ RIO 3",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/8/",
+    "name": "POÇO EXEMPLO EXP (PERF+CIM)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1341/?rev=2695",
+        "name": "Big Bore",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/14/",
+    "name": "1-CES-157",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/7/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/12/",
+    "name": "POÇO EXEMPLO ES (BT)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1345/?rev=2697",
+        "name": "PROJ ES - BT",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/16/",
+    "name": "8-LL-74-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1357/?rev=4437",
+        "name": "8-LL-74-RJS (LS-I10)",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1777/?rev=7424",
+        "name": "8-LL-74-RJS (LS-I10) (Copia para teste de importação)",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/11/",
+    "name": "POÇO EXEMPLO RIO (JATEADO)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1344/?rev=2692",
+        "name": "Perfuração",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/15/",
+    "name": "8-LL-65D-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1356/?rev=8046",
+        "name": "8-LL-65D-RJS ",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1791/?rev=7446",
+        "name": "8-LL-65D-RJS",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1795/?rev=7455",
+        "name": "BT_Variavel_Interrompido",
+        "file_type": "simcon.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1997/?rev=8047",
+        "name": "8-LL-65D-RJS_Teste",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/18/",
+    "name": "Módulo III - 9-RO-161D-RJS / 7-RO-162HP-RJS (P1-28)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/10/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1360/?rev=4416",
+        "name": "9-RO-161D-RJS (SS-80) 2015-05-07 16:22:49.641057",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/21/",
+    "name": "PAD Buzios W",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/13/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1371/?rev=5859",
+        "name": "Perfuração",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1781/?rev=7428",
+        "name": "PROJETO 1",
+        "file_type": "riserweb.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/20/",
+    "name": "7-TMT-2D-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1362/?rev=5863",
+        "name": "7-TMT-2D-RJS_V0 2015-05-07 16:28:59.328638",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1587/?rev=5753",
+        "name": "Poco3_Validacao",
+        "file_type": "score.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1778/?rev=7353",
+        "name": "Teste importação",
+        "file_type": "score.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/17/",
+    "name": "PROD T2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/9/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1359/?rev=4412",
+        "name": "executivo - horizontal 2015-05-07 16:21:39.729351",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1598/?rev=5806",
+        "name": "Golfinho Abandonado",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/13/",
+    "name": "pocoTeste",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/6/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1349/?rev=2876",
+        "name": "caso_base3_com_ecp",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1350/?rev=2705",
+        "name": "casoBase",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1351/?rev=2882",
+        "name": "teste-baleia-cai",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1352/?rev=2914",
+        "name": "teste_ver_20-04-2015",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1353/?rev=2816",
+        "name": "Caso base2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1354/?rev=2828",
+        "name": "caso_teste_janela_operacional",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1355/?rev=2825",
+        "name": "teste_1",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1358/?rev=2877",
+        "name": "Projeçãoéòî",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1363/?rev=2880",
+        "name": "caso_teste_janela_operacional_copia2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1364/?rev=2875",
+        "name": "Caso base2_bug",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1365/?rev=2842",
+        "name": "Caso base2_copia2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1366/?rev=2866",
+        "name": "caso_teste_janela_operacional_copia",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1367/?rev=2879",
+        "name": "teste-baleia-cai_copia",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1368/?rev=2847",
+        "name": "Albacora-trajetoria-nova",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1369/?rev=2859",
+        "name": "baleia_ana",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1370/?rev=2873",
+        "name": "caso_3_sem_ECP",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1372/?rev=2930",
+        "name": "0_baleia_ana",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1373/?rev=2893",
+        "name": "AAA%$#%$#¨&&*(*&())(*33333333@########&&&&¨¨¨¨¨¨¨¨$%%%%##$$\"\"\"\"\"\"",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1374/?rev=2886",
+        "name": "ãããóóóó´`EEEéééé!@",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1375/?rev=2874",
+        "name": "caso_BASE",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1377/?rev=2888",
+        "name": "8-MLS-127HP-RJS-4",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1378/?rev=2889",
+        "name": "8-MLS-65HP-RJS-alfa_ajustada",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1379/?rev=2890",
+        "name": "adilson-1",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1380/?rev=2894",
+        "name": "Baleia_Ana_fluido9.5ppg_Bioprop2040_Q4.0bpm_com_tela_diversiva",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1381/?rev=2892",
+        "name": "7-BR-73HPA-RJS",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1382/?rev=2897",
+        "name": "bug2-sem-oscilacao",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1383/?rev=2920",
+        "name": "8-JUB-29H-ESS-2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1384/?rev=2898",
+        "name": "bugmaster",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1385/?rev=2899",
+        "name": "ggg",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1386/?rev=2900",
+        "name": "jubarte-teste-bug-ecp",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1387/?rev=2901",
+        "name": "modiicacao-agostinho-tabela-de-vazao-constante",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1388/?rev=2902",
+        "name": "modiicacao-agostinho-tabela-de-vazao-edimar",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1389/?rev=2903",
+        "name": "teste-mrl200-2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1390/?rev=2915",
+        "name": "teste-tabela",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1391/?rev=2905",
+        "name": "modiicacao-agostinho",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1392/?rev=2907",
+        "name": "8-MLS-65HP-RJS-novo",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1393/?rev=2922",
+        "name": "baleia_teste_livia",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1394/?rev=2911",
+        "name": "8-MLS-127HP-RJS-3",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1395/?rev=2918",
+        "name": "7-MRL-210HP-RJS-modificado-sem-ecp-sem-tubo-dentro-revestimento-2",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1396/?rev=2924",
+        "name": "save_simgph",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1398/?rev=2928",
+        "name": "))))))))))))))))!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$$$$$$$$$$$$$$$$$$$$$$$$$$$",
+        "file_type": "simgph.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1582/?rev=5746",
+        "name": "projeto_14112016",
+        "file_type": "score.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/23/",
+    "name": "9-ITP-1-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/15/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1397/?rev=5898",
+        "name": "ADR-01",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1410/?rev=3044",
+        "name": "caso 1",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1411/?rev=3045",
+        "name": "caso 1 (firme - 4 fases)",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1591/?rev=5899",
+        "name": "ADR-01 v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1593/?rev=5784",
+        "name": "Caso 2",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/24/",
+    "name": "CASO_USO",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/16/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1399/?rev=2964",
+        "name": "PROJ",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/26/",
+    "name": "Guarani",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/18/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1401/?rev=4380",
+        "name": "Guarani",
+        "file_type": "matriz.complexity"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/22/",
+    "name": "7-LL-73-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/14/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1376/?rev=5878",
+        "name": "7-LL-73-RJS",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1407/?rev=3041",
+        "name": "projeto1",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1408/?rev=3042",
+        "name": "THD",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1409/?rev=3043",
+        "name": "BHD",
+        "file_type": "seeds.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/27/",
+    "name": "Poço Teste #2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1402/?rev=3086",
+        "name": "Teste",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/25/",
+    "name": "Malegueta",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/17/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1400/?rev=2966",
+        "name": "Cravado",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/30/",
+    "name": "7-LL-73D-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/20/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1414/?rev=3049",
+        "name": "7jts_cimentado2",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/34/",
+    "name": "8-SPH-11-SPS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/21/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1422/?rev=3080",
+        "name": "Reentrada BHD",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1633/?rev=5866",
+        "name": "Reentrada BHD 2015-08-27 08:56:56.648846",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/28/",
+    "name": "9-RJS-716",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/10/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1412/?rev=3059",
+        "name": "Exportaçao_GENESIS_PFU",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1418/?rev=3060",
+        "name": "SEEDS Sequence",
+        "file_type": "genesis.pfu"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1419/?rev=3074",
+        "name": "SEEDS Sequence [446]",
+        "file_type": "genesis.pfu"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/36/",
+    "name": "7-LL-80-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1424/?rev=5895",
+        "name": "7-LL-80-RJS (LC-P7) ",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/31/",
+    "name": "8-SPH-9-SPS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/21/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1415/?rev=3056",
+        "name": "4 Fases",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1416/?rev=3058",
+        "name": "Exportaçao_GENESIS_PFU",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1420/?rev=3075",
+        "name": "test completions [416]",
+        "file_type": "genesis.pfu"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1510/?rev=4394",
+        "name": "TESTE SEEDS [280]",
+        "file_type": "genesis.pfu"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/33/",
+    "name": "Dogue Alemão",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/22/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1421/?rev=3079",
+        "name": "teste_BT_swx",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/29/",
+    "name": "9-LL-30-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1413/?rev=3047",
+        "name": "Uno Mille",
+        "file_type": "seeds.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/32/",
+    "name": "7-SPH-8-SPS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/21/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1417/?rev=8163",
+        "name": "Exportaçao_GENESIS_PFU",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1504/?rev=4386",
+        "name": "Anna_SEEDS [391]",
+        "file_type": "genesis.pfu"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/35/",
+    "name": "8-SPH-11-SPS - renomear PGSP",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/23/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1423/?rev=3081",
+        "name": "teste1",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/37/",
+    "name": "Guarani",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/24/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/40/",
+    "name": "LL-000 (LINER)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1506/?rev=4389",
+        "name": "liner - fase 3",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1507/?rev=4391",
+        "name": "2-Liners",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1508/?rev=4392",
+        "name": "2-Liners v2",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/38/",
+    "name": "3-PRB-2-ESS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/25/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1498/?rev=8071",
+        "name": "Projeto v1 (1)",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1499/?rev=4381",
+        "name": "teste completação",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1509/?rev=4393",
+        "name": "TPNE_A [294]",
+        "file_type": "genesis.pfu"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1597/?rev=5810",
+        "name": "CasoTeste22",
+        "file_type": "simcon2.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1599/?rev=5807",
+        "name": "Novo projeto perfuração",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1602/?rev=5864",
+        "name": "caso_pa2",
+        "file_type": "simcon.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1603/?rev=5817",
+        "name": "teste_5fases",
+        "file_type": "simcon.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1648/?rev=7453",
+        "name": "CasoTesteSimworx",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1875/?rev=7689",
+        "name": "ck4-1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/44/",
+    "name": "EXEMPLO 3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1519/?rev=4426",
+        "name": "caso para importacao PWK",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/46/",
+    "name": "Teste_ImportSWX",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/29/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/39/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1500/?rev=4382",
+        "name": "gravel_one_trip_v2",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1501/?rev=4383",
+        "name": "Aval_TI_zona inferior_ TP_zona superior",
+        "file_type": "seeds.assessment"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1502/?rev=4384",
+        "name": "Aval_TFR_3Z",
+        "file_type": "seeds.assessment"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1503/?rev=4385",
+        "name": "PACS completa até ANM",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1581/?rev=5745",
+        "name": "Poco1_Validacao",
+        "file_type": "score.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1780/?rev=7427",
+        "name": "Teste_ISO 30-01-2018",
+        "file_type": "riserweb.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1849/?rev=7629",
+        "name": "CI 2 Zonas ",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2003/?rev=8062",
+        "name": "Projeto spr1 até TH coluna montada selo fora do packer",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/41/",
+    "name": "Testes Andreas 29/02/2016",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1511/?rev=4396",
+        "name": "Teste Dados Básicos",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/45/",
+    "name": "EXEMPLO 2 - NW5",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1520/?rev=4428",
+        "name": "ex2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1527/?rev=4451",
+        "name": "caso_jorel_master",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/47/",
+    "name": "POÇO _ SWX",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/29/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1523/?rev=4444",
+        "name": "Teste76",
+        "file_type": "pwk.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1524/?rev=4445",
+        "name": "Caso_83",
+        "file_type": "pwk.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/43/",
+    "name": "EXEMPLO 1  - Paçoca",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1518/?rev=4425",
+        "name": "ex1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/42/",
+    "name": "PWK_IMPORT",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1517/?rev=7546",
+        "name": "Caso _ 7-LL-73-RJS",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1630/?rev=5853",
+        "name": "Projeto1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/50/",
+    "name": "exemplo1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1528/?rev=4453",
+        "name": "poco v1",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1643/?rev=5888",
+        "name": "Caso_teste",
+        "file_type": "sest.solos"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/49/",
+    "name": "Exemplo 3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1526/?rev=4447",
+        "name": "caso 1",
+        "file_type": "pwk.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/51/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/30/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/48/",
+    "name": "8-LL-54D-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1525/?rev=7475",
+        "name": "projeto1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/53/",
+    "name": "Poço1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/31/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1529/?rev=4457",
+        "name": "D40",
+        "file_type": "pwk.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/57/",
+    "name": "pwk_IMPORT",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/52/",
+    "name": "PoçoTeste_MPD",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/31/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/59/",
+    "name": "TesteSyncPWK2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/54/",
+    "name": "TESTEPOÇOPWK",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/58/",
+    "name": "TesteSyncSimcon123",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/60/",
+    "name": "TesteSyncPWK3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/64/",
+    "name": "TesteSyncPWK7",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/61/",
+    "name": "TesteSyncPWK4",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/62/",
+    "name": "TesteSyncPWK5",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/63/",
+    "name": "TesteSyncPWK6",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/67/",
+    "name": "TesteSyncPWK10",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1882/?rev=7699",
+        "name": "Simples Rev + ANM sem teste",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1883/?rev=7700",
+        "name": "teste2",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/68/",
+    "name": "TesteSyncPWK11",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/66/",
+    "name": "PWKTESTESYNC",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/65/",
+    "name": "TesteRenomear",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/69/",
+    "name": "TesteSyncPWK12",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/72/",
+    "name": "TesteSyncPWK15",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/70/",
+    "name": "TesteSyncPWK13",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/71/",
+    "name": "TesteSync14",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/74/",
+    "name": "testesyncpwk7",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/73/",
+    "name": "TesteSyncPWK16",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/76/",
+    "name": "testesyncsimcon01",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1600/?rev=5811",
+        "name": "TesteSemRevestimento",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/75/",
+    "name": "testesyncpwk3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/79/",
+    "name": "testesyncsimcon04",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/81/",
+    "name": "testesyncsimcon06",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/78/",
+    "name": "testesyncsimcon03",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/80/",
+    "name": "testesyncsimcon05",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/83/",
+    "name": "testesyncsimcon09",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/77/",
+    "name": "testesyncsimcon02",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/84/",
+    "name": "7-LL-27-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1583/?rev=5748",
+        "name": "Projeto v1 (2)",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1584/?rev=5756",
+        "name": "Projeto v1",
+        "file_type": "seeds.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/85/",
+    "name": "Jorel1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1586/?rev=5752",
+        "name": "Jorelzinho1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/82/",
+    "name": "testesyncsimcon07",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/86/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/32/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/87/",
+    "name": "Mapa1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1588/?rev=5757",
+        "name": "Mapa-8-BUZ-15-RJS(BUZ-1.I9)",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1589/?rev=5762",
+        "name": "Mapa-8-BUZ-15-RJS(BUZ-1.I9)B",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1590/?rev=5777",
+        "name": "Mapa-8-BUZ-15-RJS(BUZ-1.I9)C",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1638/?rev=5877",
+        "name": "teste_aranha1",
+        "file_type": "simcarr.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/95/",
+    "name": "testesyncsimcon12",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/88/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/33/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1776/?rev=7351",
+        "name": "fdfd",
+        "file_type": "score.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1871/?rev=7678",
+        "name": "4554",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1963/?rev=7984",
+        "name": "DB executado",
+        "file_type": "dadosbasicos.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/92/",
+    "name": "SIMSAL",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1601/?rev=5815",
+        "name": "SIMSAL_IMPORT",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/98/",
+    "name": "U4FT",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/35/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1631/?rev=5855",
+        "name": "7-LL-73-RJS",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1632/?rev=5856",
+        "name": "8-LL-74-RJS (LS-I10)",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1645/?rev=5890",
+        "name": "000-copia-3",
+        "file_type": "simsal.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1646/?rev=5891",
+        "name": "000-copia-6",
+        "file_type": "simsal.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/96/",
+    "name": "testesyncsimcon14",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/97/",
+    "name": "testesyncsimcon15",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/99/",
+    "name": "teste_03082017",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/93/",
+    "name": "Esquemas_PROD",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1604/?rev=5822",
+        "name": "CASOA_4FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1605/?rev=5820",
+        "name": "CASOB_4FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1606/?rev=5821",
+        "name": "CASOC_4FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1607/?rev=5823",
+        "name": "CASOD_5FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1608/?rev=7708",
+        "name": "CASOE_5FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1609/?rev=5825",
+        "name": "CASOH_6FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1610/?rev=5826",
+        "name": "CASOG_3FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1611/?rev=5834",
+        "name": "CASOI_6FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1612/?rev=5833",
+        "name": "CASOJ_6FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1613/?rev=5832",
+        "name": "CASOK_4FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1614/?rev=7709",
+        "name": "CASOM_7FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1615/?rev=5831",
+        "name": "CASOL_7FASES",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1616/?rev=5850",
+        "name": "CASOA_4FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1617/?rev=5837",
+        "name": "CASOB_4FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1618/?rev=5838",
+        "name": "CASOC_4FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1619/?rev=5839",
+        "name": "CASOD_5FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1620/?rev=5840",
+        "name": "CASOE_5FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1621/?rev=5841",
+        "name": "CASOF_5FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1622/?rev=5842",
+        "name": "CASOH_6FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1623/?rev=5843",
+        "name": "CASOG_3FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1624/?rev=5844",
+        "name": "CASOJ_6FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1625/?rev=5845",
+        "name": "CASOI_6FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1626/?rev=5846",
+        "name": "CASOL_7FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1627/?rev=5847",
+        "name": "CASOK_4FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1628/?rev=5848",
+        "name": "CASOM_7FASES_v0",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/94/",
+    "name": "testesyncsimcon10",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/100/",
+    "name": "Teste_Poço_Sync",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/103/",
+    "name": "SWX-WELL",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/37/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1636/?rev=5894",
+        "name": "SWX - 001",
+        "file_type": "simsal.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1637/?rev=5876",
+        "name": "SWX - 002",
+        "file_type": "simsal.study"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1647/?rev=5892",
+        "name": "SWX - 003",
+        "file_type": "simsal.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/102/",
+    "name": "Poco 1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/6/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1634/?rev=5867",
+        "name": "caso 1a- buz13",
+        "file_type": "simcon.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/106/",
+    "name": "LCCV_02",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/39/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/105/",
+    "name": "LCCV_01",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/39/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/101/",
+    "name": "Teste_sync_simsal_change",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/104/",
+    "name": "u'SWX-WELL'",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/38/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/108/",
+    "name": "wikki2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/107/",
+    "name": "aranha-01",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/40/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1967/?rev=7994",
+        "name": "comp1",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1968/?rev=7995",
+        "name": "comp3",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1969/?rev=7996",
+        "name": "comp4",
+        "file_type": "dadosbasicos.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/112/",
+    "name": "criado novo para teste",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/5/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/110/",
+    "name": "8-JP-1-ALS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/41/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1639/?rev=5880",
+        "name": "Projeto FEL 3",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/109/",
+    "name": "8-LL-112-RJS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/115/",
+    "name": "caso1111",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/116/",
+    "name": "blabla11",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/114/",
+    "name": "poco3333",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/42/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/113/",
+    "name": "poco_pgsp",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/118/",
+    "name": "Fabio",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1640/?rev=5885",
+        "name": "Teste_sest_solos_3",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1641/?rev=5886",
+        "name": "Caso 1",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1642/?rev=5887",
+        "name": "Caso_teste",
+        "file_type": "sest.solos"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/120/",
+    "name": "7-rjs-123",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/9/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/117/",
+    "name": "p1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/63/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/119/",
+    "name": "pa",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1644/?rev=5889",
+        "name": "Caso_teste",
+        "file_type": "sest.solos"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/122/",
+    "name": "caso_sest_solos",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/121/",
+    "name": "7-rjs-123A",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/9/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1782/?rev=7429",
+        "name": "7-RJS-123A",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/123/",
+    "name": "sestsolos_11",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/127/",
+    "name": "L. Felipe",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/30/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/126/",
+    "name": "casos_02052018",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/128/",
+    "name": "Teste de Importação",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/41/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1793/?rev=7450",
+        "name": "Teste de Importação 1",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1809/?rev=7517",
+        "name": "felipe pontes",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1810/?rev=7560",
+        "name": "Validação",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/124/",
+    "name": "POCO",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/45/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1784/?rev=8044",
+        "name": "CI 3 ZONAS",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1785/?rev=7696",
+        "name": "PACI 2 Zonas",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1786/?rev=7483",
+        "name": "PACI 2 +1 (exemplo 2)",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1787/?rev=7482",
+        "name": "PACI 2 + 1",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1788/?rev=8040",
+        "name": "PACS",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1789/?rev=8043",
+        "name": "CI 2 ZONAS",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1790/?rev=7441",
+        "name": "SIMPLES REVESTIDO",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1792/?rev=7479",
+        "name": "CASO CI 3 ZONAS EXEMPLO SEQ OPERACIONAL",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1862/?rev=8068",
+        "name": "PACI 2 + 1 (swx-dup)",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1867/?rev=7673",
+        "name": "teste",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1884/?rev=7702",
+        "name": "multiplas colunas",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1995/?rev=8041",
+        "name": "EXEMPLO PACS 2 - dados basicos completação",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1996/?rev=8042",
+        "name": "PACS - dados basicos completação",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2019/?rev=8098",
+        "name": "llll",
+        "file_type": "dadosbasicos.asbuilt"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/131/",
+    "name": "7-SRR",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1797/?rev=7509",
+        "name": "Dados para validação",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/129/",
+    "name": "Poço Teste - 8-XX-XX-XXS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/41/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1794/?rev=7451",
+        "name": "8-XX-XX-XXS",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/130/",
+    "name": "poco_teste1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1796/?rev=7456",
+        "name": "projeto1",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1800/?rev=7478",
+        "name": "import_1",
+        "file_type": "simentar.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/135/",
+    "name": "BUZ",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1802/?rev=7564",
+        "name": "Validação",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1803/?rev=7490",
+        "name": "Teste exportação",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/134/",
+    "name": "WELL3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/48/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1801/?rev=8164",
+        "name": "well3-perf",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2000/?rev=8058",
+        "name": "teste multiplas colunas",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2041/?rev=8153",
+        "name": "SCSB (4)",
+        "file_type": "csb.scsb"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/125/",
+    "name": "teste3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/20/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/133/",
+    "name": "testee",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/47/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/132/",
+    "name": "7-BR",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1799/?rev=7473",
+        "name": "7-BR-XX",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/137/",
+    "name": "BR",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1805/?rev=7555",
+        "name": "Projeto para validação",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1811/?rev=7558",
+        "name": "Teste de Tieback",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/138/",
+    "name": "AB",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1806/?rev=7498",
+        "name": "Dados para validação 2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1807/?rev=7671",
+        "name": "Dados para validação",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1861/?rev=7653",
+        "name": "cJorel",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/136/",
+    "name": "MRL",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1804/?rev=7675",
+        "name": "Projeto para validação",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/139/",
+    "name": "SRR",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1808/?rev=7510",
+        "name": "Dados para validação",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/140/",
+    "name": "casos de uso",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1812/?rev=7565",
+        "name": "exemplo1_presal",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1813/?rev=7566",
+        "name": "exemplo2_possal",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1814/?rev=7567",
+        "name": "exemplo3_presal",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1815/?rev=7568",
+        "name": "exemplo4_possal",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1816/?rev=7569",
+        "name": "exemplo5_possal",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/141/",
+    "name": "caso Romulo",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1821/?rev=7575",
+        "name": "caso Romulo",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2045/?rev=8158",
+        "name": "Diego (Romulo)",
+        "file_type": "score.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/142/",
+    "name": "caso Zucatto",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1822/?rev=8109",
+        "name": "caso Zucatto",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1823/?rev=7617",
+        "name": "caso Zucatto - sem litologia",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1844/?rev=7615",
+        "name": "caso Zucatto - sem lito 2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2021/?rev=8111",
+        "name": "caso Zucatto_JA",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/145/",
+    "name": "caso Parisotto",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1820/?rev=7574",
+        "name": "caso Parisotto",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/144/",
+    "name": "caso Mateus/Roger",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1819/?rev=7573",
+        "name": "caso mateus_roger",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/143/",
+    "name": "caso Filipe",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1818/?rev=7572",
+        "name": "caso Filipe",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/146/",
+    "name": "caso Bastos",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1817/?rev=8050",
+        "name": "caso bastos",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2013/?rev=8115",
+        "name": "caso bastos2-1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/148/",
+    "name": "Jorel",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1846/?rev=7620",
+        "name": "J01",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1912/?rev=7753",
+        "name": "caso_perf_proj",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/147/",
+    "name": "Analise Fabio",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/43/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1845/?rev=8077",
+        "name": "caso Zucatto",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1847/?rev=7622",
+        "name": "Caso Fabio",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1983/?rev=8019",
+        "name": "caso Parisotto",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1999/?rev=8110",
+        "name": "Teste alojadores",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2031/?rev=8140",
+        "name": "Caso Fabio2",
+        "file_type": "sest.solos"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2038/?rev=8149",
+        "name": "caso Parisotto - copia",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/149/",
+    "name": "Testes Válber",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/30/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1848/?rev=7628",
+        "name": "CI - injetor - 2 zonas",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1850/?rev=7630",
+        "name": "CI 2 Zonas - somente ANM",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1852/?rev=7636",
+        "name": "CI 2 Zonas ",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1990/?rev=8031",
+        "name": "Pre Plan - Firme - Araucária Santos_JA",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1998/?rev=8079",
+        "name": "teste formacoes vlaux",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2001/?rev=8059",
+        "name": "well3-perf",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2002/?rev=8061",
+        "name": "SIMPLES REVESTIDO",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2004/?rev=8063",
+        "name": "teste_coluna_aval",
+        "file_type": "dadosbasicos.assessment"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2011/?rev=8078",
+        "name": "Poço executado",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2022/?rev=8112",
+        "name": "@Completação P1 - PDG e sapata 13 mais rasos (admin)",
+        "file_type": "dadosbasicos.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/150/",
+    "name": "Staging",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/50/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1851/?rev=7642",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/158/",
+    "name": "Poço Teste #2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/56/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1860/?rev=7652",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/151/",
+    "name": "Exemplo_SEST_TR",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1853/?rev=7637",
+        "name": "sest1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/160/",
+    "name": "8-SPH-9-SPS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/57/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1864/?rev=7656",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/157/",
+    "name": "Teste_03092018",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1859/?rev=7650",
+        "name": "caso_importacao2",
+        "file_type": "simentar.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/159/",
+    "name": "Poço Teste #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/56/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1863/?rev=7655",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/166/",
+    "name": "01/06/18 - x",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/167/",
+    "name": "22/05/18",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1873/?rev=7683",
+        "name": "operacao de completacao 2",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/172/",
+    "name": "POCO",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/64/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1885/?rev=7717",
+        "name": "OA",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1886/?rev=7718",
+        "name": "OC",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1887/?rev=7719",
+        "name": "OP",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1888/?rev=7720",
+        "name": "PA",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1889/?rev=7721",
+        "name": "PC",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1890/?rev=7763",
+        "name": "PP",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/177/",
+    "name": "POCO-22/10/2018 ( TESTE 1)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/165/",
+    "name": "aloooo",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1872/?rev=7784",
+        "name": "ck 1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1874/?rev=7686",
+        "name": "hhgghhg",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1877/?rev=7748",
+        "name": "ck 2",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1878/?rev=7692",
+        "name": "ck 6 - 27/02/2018",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1909/?rev=7751",
+        "name": "ck 3",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1910/?rev=7749",
+        "name": "ck 4",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1923/?rev=7785",
+        "name": "opparapub",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1934/?rev=7864",
+        "name": "op",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1935/?rev=7865",
+        "name": "completacao",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1936/?rev=7880",
+        "name": "PP",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1937/?rev=7960",
+        "name": "novochecklist",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1945/?rev=7901",
+        "name": "parafinalizar",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1946/?rev=7959",
+        "name": "Projeto de avaliação",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1956/?rev=7973",
+        "name": "checklistparapub",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/154/",
+    "name": "Campo Teste #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/53/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1856/?rev=7644",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/152/",
+    "name": "CAMPO TESTE",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/51/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1854/?rev=7640",
+        "name": "teste 1111",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/153/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/52/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1855/?rev=7643",
+        "name": "operacao de completacao 1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/156/",
+    "name": "Campo Teste #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/55/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1858/?rev=7649",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/168/",
+    "name": "Testes",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1876/?rev=7690",
+        "name": "ck OP 19-12-17 17:38",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1880/?rev=7695",
+        "name": "ck OP 10-01-18 19:33",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1918/?rev=7766",
+        "name": "ck relatório de evidências (1)",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/155/",
+    "name": "Campo Teste #1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/54/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1857/?rev=7646",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/164/",
+    "name": "caso_dabs_pgsp",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/59/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1870/?rev=7677",
+        "name": "ss",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/162/",
+    "name": "Jorel1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/56/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1866/?rev=7666",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/184/",
+    "name": "23/10/2018 ",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/52/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/170/",
+    "name": "TESTE",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/25/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1881/?rev=7716",
+        "name": "op_comp_1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1891/?rev=7723",
+        "name": "pcomp_1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1892/?rev=7725",
+        "name": "op_1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/169/",
+    "name": "Poço Teste",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/62/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1879/?rev=8076",
+        "name": "caso teste",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2027/?rev=8134",
+        "name": "Teste importação produção",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/163/",
+    "name": "3-RJS-723",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/58/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1868/?rev=7674",
+        "name": "3-RJS-723 - Retirada de capa do CaTS e instalação de LDB",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/161/",
+    "name": "TESTEPOÇOPWK",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/56/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1865/?rev=7661",
+        "name": "cxzdfdcsd",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/171/",
+    "name": "poco1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/63/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1896/?rev=7729",
+        "name": "db executado",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1897/?rev=7730",
+        "name": "b_execut2",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1898/?rev=7988",
+        "name": "caso_11",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1899/?rev=7732",
+        "name": "caso_14_troquei packer por tampao de cimento",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1900/?rev=7733",
+        "name": "caso_13",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1901/?rev=7734",
+        "name": "db-exec1_1",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1902/?rev=7735",
+        "name": "db-exec1_2",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1903/?rev=7737",
+        "name": "caso1",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1904/?rev=7738",
+        "name": "vc",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1905/?rev=7739",
+        "name": "bbbb",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1906/?rev=7741",
+        "name": "cccc",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1907/?rev=7742",
+        "name": "Projeto Executado (1)",
+        "file_type": "csb.ncsb"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1908/?rev=7744",
+        "name": "tmt",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1964/?rev=7985",
+        "name": "caso_14",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1965/?rev=7989",
+        "name": "ll-11",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1966/?rev=7992",
+        "name": "kllk",
+        "file_type": "dadosbasicos.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/175/",
+    "name": "novo_poco_PGSP_19102018",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2030/?rev=8136",
+        "name": "8mrl",
+        "file_type": "simentar.study"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/179/",
+    "name": "22/05/18",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1913/?rev=7754",
+        "name": "projeto de completacao 11",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/176/",
+    "name": "Poco-Teste-1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/66/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1895/?rev=7728",
+        "name": "ioioi",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/173/",
+    "name": "poco1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/65/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1921/?rev=7773",
+        "name": "comP11",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1922/?rev=7774",
+        "name": "caso_op_11",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1931/?rev=7798",
+        "name": "op1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1932/?rev=7799",
+        "name": "aval1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/192/",
+    "name": "teste teste",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1981/?rev=8015",
+        "name": "sasaa",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1982/?rev=8016",
+        "name": "ssa",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/193/",
+    "name": "Jorel",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/50/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/174/",
+    "name": "Poco-Teste-0",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/66/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1893/?rev=7726",
+        "name": "e",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1894/?rev=7727",
+        "name": "25",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/178/",
+    "name": "WWE",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/181/",
+    "name": "TESTE-23/10/2018 ( RENOMEADO)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/50/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1917/?rev=7764",
+        "name": "teste",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1944/?rev=7896",
+        "name": "teste novo projeto",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/198/",
+    "name": "POCO_SEST_SAL",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/69/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/191/",
+    "name": "aranha-02",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/40/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1970/?rev=7997",
+        "name": "caso_02",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1971/?rev=8001",
+        "name": "teste_1",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1972/?rev=8000",
+        "name": "caso_3",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1973/?rev=8023",
+        "name": "caso_3",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1974/?rev=8003",
+        "name": "caso_5",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1975/?rev=8024",
+        "name": "caso_5",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1976/?rev=8005",
+        "name": "caso_6",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1977/?rev=8006",
+        "name": "caso7",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1978/?rev=8007",
+        "name": "caso7",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1979/?rev=8009",
+        "name": "caso10",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1980/?rev=8037",
+        "name": "caso10",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1984/?rev=8020",
+        "name": "caso10_08112018",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1985/?rev=8022",
+        "name": "caso_08112018",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1986/?rev=8025",
+        "name": "caso3_08112018",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1987/?rev=8026",
+        "name": "caso+++",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1988/?rev=8027",
+        "name": "Projeto Executado (2)",
+        "file_type": "csb.ncsb"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1989/?rev=8030",
+        "name": "ss",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1993/?rev=8036",
+        "name": "caso11",
+        "file_type": "dadosbasicos.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1994/?rev=8038",
+        "name": "caso11",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/182/",
+    "name": "TODELETES",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/180/",
+    "name": "SW (RENOMEADO X)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/52/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/183/",
+    "name": "poco2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/65/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1914/?rev=7756",
+        "name": "p1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1915/?rev=7757",
+        "name": "op_p1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1916/?rev=7767",
+        "name": "ioioio",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1919/?rev=7768",
+        "name": "o_aval1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1920/?rev=7782",
+        "name": "comp_11",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1949/?rev=7962",
+        "name": "ds",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1950/?rev=7963",
+        "name": "yu",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1951/?rev=7964",
+        "name": "a",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1952/?rev=7965",
+        "name": "tr",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1953/?rev=7972",
+        "name": "oi",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1954/?rev=7967",
+        "name": "ewew",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1955/?rev=7970",
+        "name": "ee",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/210/",
+    "name": "teste_Aranha1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/50/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/188/",
+    "name": "7-BUZ-31D-RJS (BUZ3-P15)",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/58/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1933/?rev=7800",
+        "name": "PGSP Comp - 7-BUZ-31D-RJS (NS-33)",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/190/",
+    "name": "pcor11111",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1961/?rev=7982",
+        "name": "nm",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1962/?rev=7983",
+        "name": "kkjlklkj",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/186/",
+    "name": "poco21",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/67/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1927/?rev=7791",
+        "name": "21",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1928/?rev=7792",
+        "name": "22",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1938/?rev=7953",
+        "name": "comp21",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1939/?rev=7928",
+        "name": "comp22",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1940/?rev=7889",
+        "name": "opco",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1941/?rev=7890",
+        "name": "opop",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1942/?rev=7954",
+        "name": "io",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1943/?rev=7979",
+        "name": "jk",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1947/?rev=7948",
+        "name": "PP",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1948/?rev=7947",
+        "name": "OP",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1957/?rev=7974",
+        "name": "jiu",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1958/?rev=7976",
+        "name": "oi",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1959/?rev=7977",
+        "name": "kj",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1960/?rev=7981",
+        "name": "novo_aval",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/187/",
+    "name": "pco2",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/64/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1930/?rev=7797",
+        "name": "operaco_1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/194/",
+    "name": "exemplo PGSP",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/59/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/196/",
+    "name": "poco_replica",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/68/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/185/",
+    "name": "poco3",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/65/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1924/?rev=7786",
+        "name": "dadas",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1925/?rev=7794",
+        "name": "exemplo1",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1926/?rev=7793",
+        "name": "exemplo2",
+        "file_type": "pgsp.checklist"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/1929/?rev=7796",
+        "name": "op1",
+        "file_type": "pgsp.checklist"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/197/",
+    "name": "poco_replica_19-12-18",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/195/",
+    "name": "caso_para_teste_replicação",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/59/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/203/",
+    "name": "oi",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/65/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/212/",
+    "name": "709",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/58/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/208/",
+    "name": "TESTES PACS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/45/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2016/?rev=8099",
+        "name": "caso 1 - sph",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2017/?rev=8086",
+        "name": "caso 3- lpa",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2018/?rev=8101",
+        "name": "caso 2 - LL",
+        "file_type": "dadosbasicos.asbuilt"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/206/",
+    "name": "@_teste_pwow",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/63/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2005/?rev=8069",
+        "name": "Teste Sawada 1 Executado para CSB",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2006/?rev=8070",
+        "name": "Teste Sawada 2 - executado - completação até TH (24/09/2018)",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2007/?rev=8072",
+        "name": "Abandono Teste Sawada 3 executado",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2008/?rev=8073",
+        "name": "Perfuração e Completação Teste Sawada 4 executado",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2009/?rev=8074",
+        "name": "Teste Sawada 5",
+        "file_type": "dadosbasicos.asbuilt"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2010/?rev=8075",
+        "name": "Teste Sawada 6",
+        "file_type": "dadosbasicos.asbuilt"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/204/",
+    "name": "nnn",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/25/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/207/",
+    "name": "Poço Mateus",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2012/?rev=8080",
+        "name": "Caso Mateus 1",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/209/",
+    "name": "testes de operacao",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2020/?rev=8123",
+        "name": "bullheading",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2026/?rev=8122",
+        "name": "teste2",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2028/?rev=8133",
+        "name": "Várias operações e canhoneados",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/211/",
+    "name": "Teste#1",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/74/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2023/?rev=8118",
+        "name": "Joseir#1",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2024/?rev=8120",
+        "name": "8-BUZ-28DA-RJS",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2025/?rev=8121",
+        "name": "8-BUZ-35-RJS",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/201/",
+    "name": "pgsp_14012019",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+    "files": [],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/216/",
+    "name": "W2_T",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/48/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2035/?rev=8145",
+        "name": "caso_2_comp",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2036/?rev=8146",
+        "name": "caso_2",
+        "file_type": "seeds.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/218/",
+    "name": "Poço Teste",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/75/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2042/?rev=8154",
+        "name": "caso Zucatto",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/214/",
+    "name": "W1_T",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/48/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2032/?rev=8144",
+        "name": "caso_1",
+        "file_type": "seeds.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2034/?rev=8143",
+        "name": "caso_1_comp",
+        "file_type": "seeds.completion"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/217/",
+    "name": "Analise LAMCSO",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/43/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2039/?rev=8150",
+        "name": "caso Parisotto - copia",
+        "file_type": "dadosbasicos.drilling"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2040/?rev=8151",
+        "name": "caso Parisotto",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/213/",
+    "name": "Testes de importação",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2029/?rev=8139",
+        "name": "Tabelas com valores zero repetidos",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/215/",
+    "name": "W3_T",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/48/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2033/?rev=8147",
+        "name": "caso3_comp",
+        "file_type": "seeds.completion"
+      },
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2037/?rev=8148",
+        "name": "caso_3",
+        "file_type": "seeds.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/220/",
+    "name": "Well de teste 11235",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2044/?rev=8156",
+        "name": "teste_21",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/well/219/",
+    "name": "DADOS BÁSICOS",
+    "oilfield": "https://pocoweb.petro.intelie.net/api/public/oilfield/75/",
+    "files": [
+      {
+        "url": "https://pocoweb.petro.intelie.net/api/public/file/2043/?rev=8155",
+        "name": "caso Zucatto",
+        "file_type": "dadosbasicos.drilling"
+      }
+    ],
+    "is_visible": true
+  }
+]

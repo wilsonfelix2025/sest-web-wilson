@@ -1,0 +1,48 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2019",
+      "dom"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@directives/*": [
+        "app/directives/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ],
+      "@pipes/*": [
+        "app/pipes/*"
+      ],
+      "@utils/*": [
+        "app/utils/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/ngx-quill-editor/quillEditor.component.ts",
+    "node_modules/ngx-quill-editor/quillEditor.module.ts",
+    "node_modules/ngx-quill-editor/index.ts",
+    "../../SestWeb.Application/UseCases/Importa��oUseCase/ImportarDadosUseCase",
+    "../UseCases/Importa��o/ImportarDados/ImportarDadosPresenter.cs",
+    "../../SestWeb.Application/UseCases/Importa��oUseCase/ImportarDadosUseCase/PontoTrajet�riaModel.cs",
+    "../../SestWeb.Application/UseCases/Importa��oUseCase/ImportarDadosTrajet�riaUseCase"
+  ]
+}

@@ -1,0 +1,38 @@
+<div class="canvas-menu">
+  <a [mat-menu-trigger-for]="canvasDetailsMenu" class="button-left">
+    <mat-icon class="top-mat-icon"> more_vert </mat-icon>
+  </a>
+  <mat-menu #canvasDetailsMenu="matMenu">
+    <button mat-menu-item (click)="editChartName.emit()">Editar Nome</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item (click)="changeScale.emit()">Alterar Para {{logScale ? "Linear" : "Logaritmo" }}</button>
+    <button mat-menu-item (click)="changeWidth.emit()">Alterar Largura...</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item (click)="changeXScale.emit()" [disabled]="!hasCurve">Alterar Escala X...</button>
+    <button mat-menu-item (click)="setDefaultXScale.emit()" [disabled]="defaultXScale">Aplicar Escala X padrão</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item [mat-menu-trigger-for]="download" *ngIf="hasCurve">
+      <mat-icon>get_app</mat-icon>
+      Download...
+    </button>
+    <button mat-menu-item (click)="removeChart.emit()">
+      <mat-icon>delete</mat-icon>
+      <span>Remover</span>
+    </button>
+  </mat-menu>
+  <mat-menu #download="matMenu">
+    <button mat-menu-item (click)="exportChart.emit('image/jpeg')">
+      <span>Imagem JPEG</span>
+    </button>
+    <button mat-menu-item (click)="exportChart.emit('image/png')">
+      <span>Imagem PNG</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item (click)="exportChart.emit('application/pdf')">
+      <span>Arquivo PDF</span>
+    </button>
+    <a mat-menu-item [href]="csv" [download]="title+'.csv'">
+      <span>Tabela CSV</span>
+    </a>
+  </mat-menu>
+</div>

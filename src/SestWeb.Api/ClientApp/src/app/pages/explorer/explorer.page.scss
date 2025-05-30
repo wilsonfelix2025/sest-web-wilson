@@ -1,0 +1,30 @@
+sest-top-horizontal-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.sest-explorer-leftsidenav {
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.2), -4px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding-top: 40px;
+}
+
+.sest-explorer-rightsidenav {
+  width: 300px;
+  padding-top: 40px;
+}
+
+.sest-explorer-content-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.sest-explorer-content {
+  overflow-y: auto;
+}
+
+.mat-sidenav-container {
+  margin-top: -40px !important;
+  padding-top: 40px;
+}

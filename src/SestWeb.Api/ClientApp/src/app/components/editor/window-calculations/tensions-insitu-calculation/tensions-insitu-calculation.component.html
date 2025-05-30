@@ -1,0 +1,230 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/tensoes.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Cálculo de Tensões in Situ
+    </div>
+</div>
+
+<mat-dialog-content class="page-tensions-calculation">
+
+    <div class="sest-flex-row" *ngIf="stepTensoes === 0">
+
+        <div class="sest-flex-column sest-flex-1 maxWidth-420">
+
+            <div class="sest-flex-row sest-mr-1 sest-my-2">
+                <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border">
+                    <h3 class="sest-border-title">Modo de obtenção de <b>Sh</b>:</h3>
+                    <mat-radio-group [(ngModel)]="modoSh" class="sest-flex-row sest-align-center"
+                        aria-label="Selecione uma opção">
+                        <mat-radio-button class="sest-mx-2 sest-flex-column" value="calcularSh">Calcular Sh
+                        </mat-radio-button>
+                        <mat-radio-button class="sest-mx-2 sest-flex-column" value="fornecerSH">Fornecer Sh
+                        </mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </div>
+
+            <div *ngIf="modoSh === 'fornecerSH'">
+                <div class="sest-flex-row sest-mr-1 sest-my-2">
+                    <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border">
+                        <h3 class="sest-border-title">{{ perfis.THORmin.titulo }}:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.THORmin.selecionado">
+                            <mat-option *ngFor="let el of perfis.THORmin.lista" [value]="el">
+                                {{el.nome}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="modoSh === 'calcularSh'">
+                <div class="sest-flex-row sest-mr-1 sest-my-2">
+                    <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border">
+                        <h3 class="sest-border-title">Metodologia de Cálculo:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="metodologiaSelecionada"
+                            (selectionChange)="changeChart()">
+                            <mat-option *ngFor="let metodologia of metodologias"
+                                [value]="tiposMetodologia[metodologia]">
+                                {{ tiposMetodologia[metodologia].label }}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+
+                <div class="sest-flex-row" *ngIf="metodologiaSelecionada.lda">
+                    <div *ngFor="let input of lda"
+                        class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border max-height-input">
+                        <h3 class="sest-border-title">{{ input.titulo }}:</h3>
+                        <input class="sest-border-0 sest-py-1 sest-px-1 sest-w-100 sest-bg-white"
+                            [placeholder]="input.value" disabled>
+                    </div>
+                </div>
+
+                <div class="sest-flex-row" *ngFor="let perfil of metodologiaSelecionada.perfis">
+                    <div matTooltipClass="background-red" [matTooltip]="perfis[perfil].tooltip"
+                        [ngClass]="{'sest-input-error': perfis[perfil].tooltip.length > 0 }"
+                        class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border max-height-input">
+                        <h3 class="sest-border-title">{{ perfis[perfil].titulo }}:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis[perfil].selecionado">
+                            <mat-option *ngFor="let el of perfis[perfil].lista" [value]="el">
+                                {{el.nome}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+
+                <div *ngIf="metodologiaSelecionada.coeficiente">
+                    <div class="sest-flex-row">
+                        <div
+                            class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border max-height-input">
+                            <h3 class="sest-border-title">Modo de obtenção de <b>coeficiente</b>:</h3>
+                            <mat-radio-group [(ngModel)]="metodologiaSelecionada.tabela.ativada"
+                                class="sest-flex-row sest-align-center">
+                                <mat-radio-button class="sest-mx-2 sest-flex-column" [value]="true">
+                                    Calcular </mat-radio-button>
+                                <mat-radio-button class="sest-mx-2 sest-flex-column" [value]="false">
+                                    Fornecer </mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+
+                    <div class="sest-flex-row" *ngIf="!metodologiaSelecionada.tabela.ativada">
+                        <div class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border"
+                            matTooltipClass="background-red" [matTooltip]="coeficiente.tooltip"
+                            [ngClass]="{'sest-input-error': coeficiente.tooltip.length > 0 }">
+                            <h3 class="sest-border-title">Coeficiente:</h3>
+                            <input class="sest-border-0 sest-py-1 sest-px-1 sest-w-100" [(ngModel)]="coeficiente.value">
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="metodologiaSelecionada.tabela && metodologiaSelecionada.tabela.ativada">
+                    <div class="sest-flex-row">
+                        <div class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-w-100 sest-small-border">
+                            <hot-table [options]="metodologiaSelecionada.tabela.options"
+                                [data]="metodologiaSelecionada.tabela.data"
+                                [colHeaders]="metodologiaSelecionada.tabela.colHeaders"
+                                [columns]="metodologiaSelecionada.tabela.columns">
+                            </hot-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sest-flex-row sest-my-2 sest-mr-1">
+                <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border sest-align-center">
+                    <mat-slide-toggle [(ngModel)]="aplicarDeplecao" class="sest-light-gray sest-mx-2 sest-py-1">
+                        Depleção
+                    </mat-slide-toggle>
+                </div>
+            </div>
+
+            <div *ngIf="aplicarDeplecao === true">
+
+                <div class="sest-flex-column sest-flex-item-equal">
+                    <div class="sest-flex-row">
+                        <div matTooltipClass="background-red" [matTooltip]="perfis.GPORO.tooltip"
+                            [ngClass]="{'sest-input-error': perfis.GPORO.tooltip.length > 0 }"
+                            class="sest-small-border sest-p-1 sest-mr-2 sest-my-1 sest-flex-column sest-flex-1 sest-flex-item-equal">
+                            <h3 class="sest-border-title">GPORO original:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.GPORO.selecionado"
+                                [disabled]="modoSh === 'calcularSh' && metodologiaSelecionada.perfis.includes('GPORO')">
+                                <mat-option *ngFor="let el of perfis.GPORO.lista" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+
+                        </div>
+                        <div matTooltipClass="background-red" [matTooltip]="perfis.GPORO.depletadaTooltip"
+                            [ngClass]="{'sest-input-error': perfis.GPORO.depletadaTooltip.length > 0 }"
+                            class="sest-small-border sest-p-1 sest-ml-2 sest-mr-1 sest-my-1 sest-flex-column sest-flex-1 sest-flex-item-equal">
+                            <h3 class="sest-border-title">GPORO depletada:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.GPORO.depletada">
+                                <mat-option *ngFor="let el of perfis.GPORO.lista" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                    <div class="sest-flex-row sest-my-2">
+                        <div matTooltipClass="background-red" [matTooltip]="perfis.POISS.tooltip"
+                            [ngClass]="{'sest-input-error': perfis.POISS.tooltip.length > 0 }"
+                            class="sest-small-border sest-p-1 sest-mr-2 sest-my-1 sest-flex-column sest-flex-1 sest-flex-item-equal">
+                            <h3 class="sest-border-title">Poisson:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.POISS.selecionado"
+                                [disabled]="modoSh === 'calcularSh' && metodologiaSelecionada.perfis.includes('POISS')">
+                                <mat-option *ngFor="let el of perfis.POISS.lista" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+
+                        </div>
+                        <div matTooltipClass="background-red" [matTooltip]="perfis.BIOT.tooltip"
+                            [ngClass]="{'sest-input-error': perfis.BIOT.tooltip.length > 0 }"
+                            class="sest-small-border sest-p-1 sest-ml-2 sest-mr-1 sest-my-1 sest-flex-column sest-flex-1 sest-flex-item-equal">
+                            <h3 class="sest-border-title">Biot:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.BIOT.selecionado"
+                                [disabled]="modoSh === 'calcularSh' && metodologiaSelecionada.perfis.includes('BIOT')">
+                                <mat-option *ngFor="let el of perfis.BIOT.lista" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sest-flex-column sest-flex-1 maxHeight-450" *ngIf="mostrarGrafico && modoSh === 'calcularSh'">
+            <div fxLayoutAlign="center" class="sest-p-1 sest-flex-1 sest-my-2 sest-ml-2 sest-small-border">
+                <highcharts-chart #canvas [Highcharts]="Highcharts" [options]="metodologiaSelecionada.graficoOpcoes">
+                </highcharts-chart>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sest-flex-row" *ngIf="stepTensoes == 1">
+        <sest-tension-step-two #stepTwo [calculo]="oldCalc" [currCase]="currCase" [perfis]="perfis"
+            [calcularSh]="modoSh === 'calcularSh'" [metodologia]="metodologiaSelecionada" [deplecao]="aplicarDeplecao"
+            class="sest-flex-1">
+        </sest-tension-step-two>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-stroked-button (click)="closeModal()" class="sest-light-gray">
+        Cancelar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <div *ngIf="stepTensoes === 0 && modoSh === 'calcularSh' && metodologiaSelecionada.tabela?.ativada">
+        <div *ngIf="mostrarGrafico">
+            <button (click)="mostrarGrafico = false" mat-stroked-button color="primary">
+                Fechar Gráfico
+            </button>
+            <button (click)="generate()" mat-stroked-button color="primary">
+                Atualizar Gráfico
+            </button>
+        </div>
+        <button *ngIf="!mostrarGrafico" (click)="generate()" mat-stroked-button color="primary">
+            Gerar Gráfico
+        </button>
+    </div>
+    <button *ngIf="stepTensoes === 1" (click)="changeStep('decrement')" mat-stroked-button color="primary"
+        class="sest-light-gray">
+        Anterior
+    </button>
+    <button class="sest-ml-2" [disabled]="!isValid" *ngIf="stepTensoes === 0" (click)="changeStep('increment')"
+        mat-stroked-button color="primary">
+        Próximo
+    </button>
+    <button mat-stroked-button color="primary" *ngIf="stepTensoes === 1" (click)="submit()"
+        [disabled]="!isValid || loading">
+        Finalizar
+    </button>
+</mat-dialog-actions>

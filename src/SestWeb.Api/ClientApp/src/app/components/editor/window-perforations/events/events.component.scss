@@ -1,0 +1,85 @@
+@import "~sass/essential";
+
+.mat-dialog-content {
+    max-height: 600px;
+}
+
+::ng-deep .page-events > mat-tab-group {
+    // height: 100%;
+    // max-height: 0 !important;
+    height: 400px;
+
+    mat-tab-header {
+        border: 0 !important;
+        flex-shrink:0;
+        margin-left: 0;
+
+        .mat-tab-label {
+            min-width: 100px;
+            height: 48px;
+            padding: 10px;
+            margin: 0 4px 0 0;
+            font-size: 12px;
+            font-weight: 600;
+            border: solid 1px $gray-200;
+            border-bottom: 0 !important;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: #DFE0E4 !important;
+            color: $gray-700;
+            &:active {
+                background-color: #fff !important;
+                border-color: #F2F3F8;
+                color: $project;
+            }
+            &.mat-tab-label-active{
+                background-color: #fff !important;
+                border-color: #F2F3F8;
+                &:active {
+                    background-color: #fff !important;
+                    border-color: $gray-200;
+                    color: $project;
+                }
+            }
+        }
+        .mat-tab-label:nth-child(1) {
+            border-top-left-radius: 8px;
+        }
+        .mat-tab-label:last-child {
+            border-top-right-radius: 8px;
+        }
+        .mat-ink-bar{
+            margin-top: -2px;
+            height: 3px !important;
+            background-color: transparent !important;
+        }
+        
+    }
+
+    .mat-tab-body-wrapper {
+        height: 100%;
+        
+        .mat-tab-body-content {
+            display: flex;
+            overflow: hidden;
+            border: solid 1px $gray-100;
+            border-radius: 3px;
+            height: auto;
+            // padding: 20px 10px;
+
+            .mat-tab-label:nth-child(1) {
+                border-top-left-radius: 8px;
+            }
+            .mat-tab-label:last-child {
+                border-top-right-radius: 8px;
+            }
+            .mat-ink-bar{
+                margin-top: -2px;
+                height: 3px !important;
+                background-color: transparent !important;
+            }
+            
+        }
+    }
+
+}

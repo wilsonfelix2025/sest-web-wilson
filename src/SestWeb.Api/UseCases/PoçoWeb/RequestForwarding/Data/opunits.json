@@ -1,0 +1,525 @@
+[
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/10/",
+        "name": "UO-SUL",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/83/",
+                "name": "campo_13112019"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/11/",
+        "name": "Testes",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/26/",
+                "name": "Testes"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/27/",
+                "name": "TESTES_SWX"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/28/",
+                "name": "Teste PWK"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/35/",
+                "name": "Zappe"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/37/",
+                "name": "SWX-FIELD"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/41/",
+                "name": "LCCV"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/43/",
+                "name": "c1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/46/",
+                "name": "LCCV - Validações"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/53/",
+                "name": "Poço Teste #2"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/54/",
+                "name": "TESTEPOÇOPWK"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/55/",
+                "name": "Poço Teste #1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/56/",
+                "name": "Campo Teste #1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/63/",
+                "name": "@_campo_teste_dabs"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/75/",
+                "name": "LAMCSO"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/79/",
+                "name": "TestesWikki"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/80/",
+                "name": "Tiago_Testes"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/12/",
+        "name": "Unidade #1",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/4/",
+                "name": "Campo #1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/39/",
+                "name": "Campo_LCCV"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/40/",
+                "name": "teste_aranha"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/14/",
+        "name": "E&P-LIBRA",
+        "oilfields": []
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/16/",
+        "name": "Intelie",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/33/",
+                "name": "Staging"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/50/",
+                "name": "Testes"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/17/",
+        "name": "u'Testes'",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/38/",
+                "name": "u'SWX-FIELD'"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/19/",
+        "name": "teste",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/47/",
+                "name": "teste"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/84/",
+                "name": "campo1"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/22/",
+        "name": "Radix",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/52/",
+                "name": "22/05/18"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/60/",
+                "name": "Staging"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/61/",
+                "name": "Testes"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/68/",
+                "name": "teste_replicação"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/23/",
+        "name": "Z_TREINAMENTOS",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/59/",
+                "name": "CAMPO TESTE"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/24/",
+        "name": "UO19/10/2018",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/64/",
+                "name": "CAMPO"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/25/",
+        "name": "UO_exemplo1",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/65/",
+                "name": "campo1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/67/",
+                "name": "campo2"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/26/",
+        "name": "UO-RADIX-TESTE-19-10-2018",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/66/",
+                "name": "Campo-Revisado"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/3/",
+        "name": "EXP",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/6/",
+                "name": "campoTeste"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/7/",
+                "name": "BM-POT-16"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/13/",
+                "name": "Cessão Onerosa"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/16/",
+                "name": "CASO_USO"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/17/",
+                "name": "Malagueta"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/22/",
+                "name": "BM-ES-22A"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/24/",
+                "name": "BM-P-2"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/25/",
+                "name": "BC-60"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/29/",
+                "name": "Campo _ TESTE SWX"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/31/",
+                "name": "Campo1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/32/",
+                "name": "Intelie"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/29/",
+        "name": "CTPS_EO",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/78/",
+                "name": "SCORE"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/30/",
+        "name": "Testando#1",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/81/",
+                "name": "Test1"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/18/",
+        "name": "AREA_TESTE_STIMBR",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/45/",
+                "name": "CAMPO1"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/8/",
+        "name": "UO-RNCE",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/73/",
+                "name": "AGULHA"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/15/",
+        "name": "E&P-EXP",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/18/",
+                "name": "Testes"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/21/",
+        "name": "Area_testes_UFAL1",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/49/",
+                "name": "campo1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/62/",
+                "name": "Vallourec"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/77/",
+                "name": "lccv"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/32/",
+        "name": "UO-NOVA",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/85/",
+                "name": "CAMPO-NOVO"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/20/",
+        "name": "AREA_PLUGIN_GENESIS",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/48/",
+                "name": "CAMPO"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/13/",
+        "name": "INTER",
+        "oilfields": []
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/31/",
+        "name": "UN-SWX",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/82/",
+                "name": "SWX1"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/5/",
+        "name": "UN-BA",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/42/",
+                "name": "campo_pgsp"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/4/",
+        "name": "UN-AM",
+        "oilfields": []
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/6/",
+        "name": "UN-BC",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/12/",
+                "name": "Tartaruga Mestiça"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/7/",
+        "name": "UO-RIO",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/5/",
+                "name": "CAMPO TESTE"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/10/",
+                "name": "Roncador"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/21/",
+                "name": "Sapinhoá"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/51/",
+                "name": "POÇO TESTE (novo1)"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/58/",
+                "name": "Búzios"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/74/",
+                "name": "Teste#1"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/9/",
+        "name": "UO-SEAL",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/11/",
+                "name": "Moita Bonita"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/27/",
+        "name": "AREA_TESTE_SEST_SAL",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/69/",
+                "name": "CAMPO"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/1/",
+        "name": "UN-ES",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/1/",
+                "name": "Campo 1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/9/",
+                "name": "Golfinho"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/44/",
+                "name": "SÃO MATEUS LESTE"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/2/",
+        "name": "UN-BS",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/2/",
+                "name": "Campo 2"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/3/",
+                "name": "Campo Teste #1"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/8/",
+                "name": "Lula"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/14/",
+                "name": "Iracema"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/15/",
+                "name": "Itapu"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/19/",
+                "name": "Franco"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/20/",
+                "name": "LULA"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/23/",
+                "name": "SAPINHOA"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/30/",
+                "name": "Testes"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/36/",
+                "name": "Campo_sincronismo blablabla"
+            },
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/57/",
+                "name": "Sapinhoá"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/33/",
+        "name": "UO-BS",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/87/",
+                "name": "Campo 2"
+            }
+        ]
+    },
+    {
+        "url": "https://pocoweb.petro.intelie.net/api/public/opunit/34/",
+        "name": "E&P-CPM/CP-EXP",
+        "oilfields": [
+            {
+                "url": "https://pocoweb.petro.intelie.net/api/public/oilfield/88/",
+                "name": "campoTeste"
+            }
+        ]
+    }
+]

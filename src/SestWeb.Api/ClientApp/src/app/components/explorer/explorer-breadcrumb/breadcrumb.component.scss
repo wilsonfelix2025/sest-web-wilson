@@ -1,0 +1,142 @@
+@import '~@angular/material/theming';
+
+.mat-toolbar-row {
+  min-height: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0 20px;
+
+  .mat-raised-button {
+    box-shadow: none;
+    // min-width: 70px;
+    // width: 70px;
+  }
+  
+  button {
+    margin-top: -2px;
+    border-radius: 5px;
+    line-height: 11px;
+    font-size: 12px;
+    padding: 4px;
+    font-weight: 500;
+    margin-right: 10px;
+    vertical-align: middle;
+    mat-icon {
+      width: 20px;
+      height: 20px;
+      font-size: 16px;
+    }
+  }
+
+}
+  
+  .mat-toolbar-multiple-rows {
+    min-height: 40px;
+    height: 40px;
+  }
+  
+  .top-mat-icon {
+    color: #337ab7 !important;
+  }
+  
+  .sest-breadcrumb {
+    z-index: 5;
+    position: relative;
+    background-color: #ddd;
+    width: 100%;
+    height: 45px;
+    min-height: 45px;
+    padding: 4px 0;
+    margin-bottom: 0 !important;
+  
+    &.mat-elevation-z6 {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    &.sest-transparent-toolbar {
+      background: transparent;
+      color: inherit;
+      box-shadow: none;
+    }
+    .sest-icon-explorer{
+    height: 40px;
+    padding: 0 10px 0 0;
+    }
+    
+  }
+
+  .sest-breadcrumb-bottom {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 21px;
+    min-height: 21px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+
+    .mat-toolbar-row {
+      min-height: 17px;
+      height: 17px;
+    }
+
+    nav {
+      width: 100%;
+      color: #009C59;
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline;
+          padding: 0 10px 0 0;
+          font-weight: 400;
+          a {
+            text-decoration: none;
+            color: #1279c8;
+            &:hover {
+              color: #009C59;
+            }
+          }
+          mat-icon{
+            height: 15px;
+            width: 20px;
+            color: #1279c8;
+            font-size: 14px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .sest-notification {
+    position: relative;
+  }
+  .sest-notification .sest-notification-badge {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    font-size: .75em;
+  }
+  .sest-notification-active .mat-icon {
+    transform-origin: 50% 0;
+    animation-name: notification-active;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes notification-active {
+    0% { transform: rotate(0deg) }
+    1% { transform: rotate(25deg) }
+    3% { transform: rotate(-20deg) }
+    5% { transform: rotate(10deg) }
+    7% { transform: rotate(-5deg) }
+    9% { transform: rotate(2deg) }
+    11% { transform: rotate(-2deg) }
+    12% { transform: rotate(0deg) }
+    20% { transform: rotate(0deg) }
+  }
+  

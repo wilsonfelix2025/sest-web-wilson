@@ -1,0 +1,30 @@
+@import "../../../../../sass/essential";
+
+.height-46 {
+    min-height: 46px;
+    max-height: 46px;
+}
+.height-250 {
+    min-height: 250px;
+    max-height: 250px;
+    overflow: auto;
+}
+.font-11, .font-11 * {
+  font-size: 11px;
+}
+.mat-dialog-content {
+    max-height: 78vh;
+}
+.sest-w-fixed-78 {
+  max-width: 78px;
+}
+.sest-w-fixed-70 {
+  max-width: 70px;
+}
+.sest-w-fixed-130 {
+  max-width: 130px;
+}
+.sest-w-fixed-174 {
+  max-width: 174px;
+  min-width: 174px;
+}

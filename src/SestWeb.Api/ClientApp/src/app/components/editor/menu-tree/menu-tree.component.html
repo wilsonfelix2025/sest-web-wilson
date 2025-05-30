@@ -1,0 +1,34 @@
+<div class="closed-menu">
+
+  <button *ngFor="let file of openFiles; let i = index;" [matMenuTriggerFor]="menuTree"
+    [ngClass]="{'Projeto': file['tipoPoço'] === 'Projeto', 'Monitoramento': file['tipoPoço'] === 'Monitoramento', 'Retroanalise': file['tipoPoço'] === 'Retroanalise'} "
+    mat-icon-button>
+    <mat-icon class="mat-icon" fontSet="fas" fontIcon="fa-file-alt"></mat-icon>
+    <mat-menu matMenuContent #menuTree="matMenu" class="mat-menu-panel">
+      <ng-template let-color="color" matMenuContent>
+        <span class="sest-toolbar-brand-text sest-gray-400" i18n>
+          <h3 class="{{file['tipoPoço']}}" fxFlex>
+            <mat-icon class="iconArrow" fontSet="fas" fontIcon="fa-angle-down"></mat-icon>{{file.nome}}
+          </h3>
+          <a mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>settings</mat-icon>
+          </a>
+        </span>
+        <sest-node-tree [caseId]="file.id" class="{{file['tipoPoço']}}">
+        </sest-node-tree>
+      </ng-template>
+    </mat-menu>
+  </button>
+
+  <mat-menu #menu="matMenu" class="menu">
+    <ng-template matMenuContent let-item="node">
+      <button mat-menu-item (click)="openDialogEditData()">
+        <mat-icon fontSet="far" fontIcon="fa-edit"></mat-icon>Edição de dados
+      </button>
+      <button mat-menu-item (click)="openDialogInitData()">
+        <mat-icon fontSet="far" fontIcon="fa-edit"></mat-icon>Tratamento inicial de dados
+      </button>
+    </ng-template>
+  </mat-menu>
+
+</div>

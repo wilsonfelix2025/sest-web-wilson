@@ -1,0 +1,60 @@
+@import "~sass/essential";
+
+.max-width-parameters {
+    max-width: 650px;
+}
+
+.max-width-specific-parameters {
+    max-width: 700px;
+}
+
+.min-width-entrada {
+    min-width: 160px;
+}
+
+.max-width-input {
+    max-width: 160px;
+}
+.min-input-height {
+    height: auto;
+}
+
+
+.sest-dialog-title {
+    margin: 0 0 10px !important;
+    padding: 10px !important;
+}
+.sest-dialog-bottom {
+    background-color: $project;
+    padding: 3px;
+    &:hover {
+        cursor: move;
+    }
+  }
+
+::ng-deep .mat-button-wrapper {
+    margin: auto;
+}
+
+.page-mechanical-calculations {
+    
+    .btn-height {
+        min-height: 190px;
+    }
+
+    .sest-center {
+        margin: auto;
+    }
+
+    .max-height-input {
+        max-height: 35px;
+    }
+    .max-width-button {
+        max-width: 60px;
+    }
+
+    .btn-medium {
+        font-size: 11px !important;
+        padding: 0 10px !important;
+    }
+}

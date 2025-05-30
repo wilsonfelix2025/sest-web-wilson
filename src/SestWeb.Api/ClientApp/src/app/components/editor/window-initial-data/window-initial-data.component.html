@@ -1,0 +1,48 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div>
+        <mat-icon fontSet="far" fontIcon="fa-edit" class="sest-medium-icon"></mat-icon>
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Tratamento Inicial de Dados
+    </div>
+</div>
+
+<mat-dialog-content class="page-initial-data">
+    <mat-tab-group fxFlexFill (selectedIndexChange)="currTab = $event">
+        <mat-tab label="Complemento de Curva" fxFlexFill>
+            <sest-complemento-curva class="sest-h-auto sest-w-100 sest-py-3 sest-px-2" #tab></sest-complemento-curva>
+        </mat-tab>
+        <mat-tab *ngIf="tipoPoco == 'Projeto'" label="Montagem de Perfis" fxFlexFill>
+        </mat-tab>
+    </mat-tab-group>
+    <ng-container *ngIf="currTab === 1">
+        <div class="sest-small-border sest-py-3 sest-px-2">
+            <sest-montagem-perfis #montagem [hidden]="stepPerfis != 0" class="sest-h-auto sest-w-100">
+            </sest-montagem-perfis>
+            <sest-selecao-perfis #selecao [hidden]="stepPerfis != 1" [trechos]="casosSelecionados"
+                class="sest-h-auto sest-w-100" (semPerfil)="changeStep('decrement')"></sest-selecao-perfis>
+        </div>
+    </ng-container>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button (click)="close()" class="sest-light-gray">
+        Cancelar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button *ngIf="currTab == 1 && stepPerfis == 1" (click)="changeStep('decrement')" mat-stroked-button color="primary"
+        class="sest-light-gray">
+        Anterior
+    </button>
+    <button *ngIf="currTab == 1 && stepPerfis == 0" (click)="changeStep('increment')" mat-stroked-button
+        color="primary">
+        Proximo
+    </button>
+    <button *ngIf="stepPerfis == 1" [disabled]="loading" (click)="finalizar()" mat-stroked-button color="primary">
+        Finalizar
+    </button>
+    <button *ngIf="currTab !== 1" [disabled]="loading" (click)="submit()" mat-stroked-button color="primary">
+        Salvar
+    </button>
+</mat-dialog-actions>

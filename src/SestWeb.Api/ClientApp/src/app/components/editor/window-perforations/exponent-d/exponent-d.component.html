@@ -1,0 +1,59 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/icons/perfuracao.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Cálculo de Expoente D
+    </div>
+</div>
+
+<mat-dialog-content class="page-overload-calculation">
+
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column">
+            <h3 class="sest-border-title">Cálculo:</h3>
+            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="calculoSelecionado">
+                <mat-option disabled>Selecione</mat-option>
+                <mat-option *ngFor="let el of tipoCalculo" [value]="el">
+                    {{el.title}}
+                </mat-option>
+            </mat-select>
+        </div>
+    </div>
+
+    <div class="sest-flex-row" *ngFor="let dado of perfisEntrada">
+        <div *ngIf="dado.mnemonic !== 'GECD' || calculoSelecionado.ecd"
+            class="sest-small-border sest-p-1 sest-my-2 sest-mx-1 sest-flex-1 sest-flex-column"
+            [ngClass]="{'sest-input-error': dado.tooltip.length > 0 }" [matTooltip]="dado.tooltip"
+            matTooltipClass="background-red">
+            <h3 class="sest-border-title">{{ dado.title }}</h3>
+            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="dado.selected">
+                <mat-option disabled>Selecione</mat-option>
+                <mat-option *ngFor="let el of dado.list" [value]="el">
+                    {{el.nome}}
+                </mat-option>
+            </mat-select>
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column"
+            [ngClass]="{'sest-input-error': calculoSelecionado.name.tooltip.length > 0 }"
+            [matTooltip]="calculoSelecionado.name.tooltip" matTooltipClass="background-red">
+            <h3 class="sest-border-title">Nome do cálculo:</h3>
+            <input class="sest-border-0 sest-py-1 sest-px-1" [(ngModel)]="calculoSelecionado.name.value">
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="!isValid || loading">
+        Calcular
+    </button>
+</mat-dialog-actions>

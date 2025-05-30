@@ -1,0 +1,10 @@
+@import '~sass/utils';
+
+@mixin sest-data-tree-theme($theme, $typography) {
+
+  .sest-toolbar-brand-text {
+    font-size: mat-font-size($typography, body-2);
+    font-weight: mat-font-weight($typography, body-2);
+  }
+ 
+}

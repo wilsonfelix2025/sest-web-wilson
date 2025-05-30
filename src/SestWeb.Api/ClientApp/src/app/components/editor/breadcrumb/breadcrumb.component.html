@@ -1,0 +1,47 @@
+<mat-toolbar class="sest-breadcrumb sest-left-breadcrumb">
+  <mat-toolbar-row fxLayout="row">
+    <button mat-button (click)="goToExplorer({opUnit: opUnit.id, oilField: oilField.id, well: well.id})">
+      <mat-icon>keyboard_return</mat-icon> Voltar
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar class="sest-breadcrumb">
+  <mat-toolbar-row class="sest-right-breadcrumb">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb-container">
+        <li class="breadcrumb-item">
+          <button mat-button (click)="goToExplorer({})">
+            <mat-icon class="mat-icon" fontSet="fa" fontIcon="fa-folder"></mat-icon>Unidades Operacionais
+          </button>
+        </li>
+        <li class="breadcrumb-item">
+          <button mat-button (click)="goToExplorer({opUnit: opUnit.id})">
+            <mat-icon class="mat-icon" fontSet="fa" fontIcon="fa-folder-open"></mat-icon>
+            {{ opUnit.name }}
+          </button>
+        </li>
+        <li class="breadcrumb-item">
+          <button mat-button (click)="goToExplorer({opUnit: opUnit.id, oilField: oilField.id})">
+            <mat-icon class="mat-icon" fontSet="fas" fontIcon="fa-cube"></mat-icon>
+            {{ oilField.name }}
+          </button>
+        </li>
+        <li class="breadcrumb-item">
+          <button mat-button (click)="goToExplorer({opUnit: opUnit.id, oilField: oilField.id, well: well.id})">
+            <mat-icon class="mat-icon" fontSet="fas" fontIcon="fa-tint"></mat-icon>
+            {{ well.name }}
+          </button>
+        </li>
+        <li class="breadcrumb-item">
+          <button mat-button disabled>
+            <mat-icon class="mat-icon" fontSet="fas" fontIcon="fa-file-alt"></mat-icon>
+            {{ file.name }}
+          </button>
+        </li>
+      </ol>
+    </nav>
+
+  </mat-toolbar-row>
+</mat-toolbar>

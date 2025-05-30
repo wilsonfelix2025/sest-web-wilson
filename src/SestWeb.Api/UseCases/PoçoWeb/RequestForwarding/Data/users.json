@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/user/1/",
+    "username": "ADMIN",
+    "email": "pearanha@petrobras.com.br",
+    "name": "",
+    "is_active": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/user/1371/",
+    "username": "SAWADA",
+    "email": "fabiosawada@petrobras.com.br",
+    "name": "Fabio Cutrim",
+    "is_active": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/user/1407/",
+    "username": "sest_1",
+    "email": "",
+    "name": "",
+    "is_active": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/user/1408/",
+    "username": "sest_2",
+    "email": "",
+    "name": "",
+    "is_active": true
+  },
+  {
+    "url": "https://pocoweb.petro.intelie.net/api/public/user/1415/",
+    "username": "jon1",
+    "email": "",
+    "name": "",
+    "is_active": true
+  }
+]

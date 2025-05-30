@@ -1,0 +1,68 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div>
+        <mat-icon fontSet="far" fontIcon="fa-edit" class="sest-medium-icon"></mat-icon>
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Edição {{ tipoTrend === 'LBF' ? 'da LBF': 'de Trend'}}
+    </div>
+</div>
+
+<mat-dialog-content class="page-edit-trend">
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-1 sest-flex-1 sest-flex-column">
+            <h3 class="sest-border-title">Nome:</h3>
+            <input class="sest-border-0 sest-py-1 sest-px-1" [(ngModel)]="nomeTrend">
+        </div>
+    </div>
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column">
+            <h3 class="sest-border-title">Perfil pai:</h3>
+            <input class="sest-border-0 sest-py-1 sest-px-1 input-disable-style" disabled [(ngModel)]="perfil.nome">
+        </div>
+    </div>
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column">
+            <h3 class="sest-border-title">Unidade:</h3>
+            <input class="sest-border-0 sest-py-1 sest-px-1 input-disable-style" disabled
+                [(ngModel)]="perfil.grupoDeUnidades['unidadePadrão']['símbolo']">
+        </div>
+    </div>
+    <div class="sest-flex-row" *ngIf="tipoTrend === 'Compactação'">
+        <mat-radio-group class="sest-p-2 sest-my-2 sest-small-border" [(ngModel)]="travarType"
+            (ngModelChange)="changeType()">
+            <mat-radio-button value="Profundidade" class="sest-p-2 sest-mx-2">
+                Travar profundidade
+            </mat-radio-button>
+            <mat-radio-button value="Inclinacao" class="sest-p-2 sest-mx-2">
+                Travar inclinação
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="sest-flex-row">
+        <div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column">
+            <hot-table #table (afterChange)="afterChangeTable($event)" (afterRemoveRow)="afterRemoveRow($event)"
+                (afterValidate)="afterValidate($event)" (afterCreateRow)="afterCreateRow($event)" [options]="options"
+                [data]="tableData" [colHeaders]="colHeaders" [columns]="columnsTypes">
+            </hot-table>
+            <span id='min' style="display: none">{{sedimentos}}</span>
+            <span id='max' style="display: none">{{ultimoPv}}</span>
+            <span id='deep' style="display: none">{{tipoProfundidade[tipoTrend]}}</span>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" [disabled]="loading || currCase.id !== dataset.currCaseId"
+        (click)="aplicar()">
+        Aplicar
+    </button>
+    <button mat-stroked-button color="primary" [disabled]="loading || currCase.id !== dataset.currCaseId"
+        (click)="submit()">
+        Ok
+    </button>
+</mat-dialog-actions>

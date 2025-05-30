@@ -1,0 +1,103 @@
+<div class="sest-flex-row sest-width-fileInfo">
+  <div class="sest-flex-column sest-mr-3" *ngIf="hasFields">
+    <div class="sest-flex-0 sest-mb-2 sest-flex-column" *ngIf="!isPocoWeb">
+      <div class="sest-flex-row sest-center-vertical">
+        Ref. de Profundidade:
+        <mat-radio-group [(ngModel)]="tableType" class="sest-mb-2 sest-center-vertical">
+          <mat-radio-button [value]="type" *ngFor="let type of tableTypes" class="sest-mx-2">
+            {{ type }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="sest-flex-row">
+        <div class="sest-small-border sest-flex-1 sest-flex-column sest-p-1" *ngIf="showTable">
+          <h3 class="sest-border-title">Correção de mesa rotativa:</h3>
+          <input matInput [(ngModel)]="correctionRotaryTable" class="sest-border-0">
+        </div>
+        <mat-icon matSuffix color="primary" class="sest-center sest-medium-icon sest-ml-1" #icon
+          [matMenuTriggerFor]="infoMesaRotativa" #trigger="matMenuTrigger" (mouseenter)="infoTriggerEnter(trigger)">
+          info
+        </mat-icon>
+        <mat-menu #infoMesaRotativa="matMenu" overlapTrigger>
+          <div (mouseleave)="trigger.closeMenu()">
+            <div class="sest-tooltip-title">
+              Mesa rotativa do poço de projeto
+            </div>
+            <div class="sest-tooltip-text sest-mx-2">
+              Os perfis de gradientes importados por cota terão seus valores ajustados pela mesa rotativa do poço
+              corrente.
+            </div>
+          </div>
+        </mat-menu>
+      </div>
+    </div>
+    <div class="sest-flex-column sest-small-border sest-flex-0 sest-mt-1 sest-p-1 sest-pb-2 sest-mb-2">
+      <h3 class="sest-border-title">Dados do poço</h3>
+      <mat-checkbox class="sest-mx-2" *ngFor="let data of wellData" [disabled]="!data.exist"
+        [(ngModel)]="data.selected">
+        {{ data.name }}
+      </mat-checkbox>
+    </div>
+  </div>
+  <div class="sest-flex-column sest-mr-1 sest-flex-3 prevent-overflow-x flex-grow-1">
+    <div class="sest-flex-item-equal sest-mb-2 sest-flex-row sest-add-backshift" *ngIf="!hasFields">
+      <div class="sest-flex-row sest-center-vertical">
+        Ref. de Profundidade:
+        <mat-radio-group [(ngModel)]="tableType" class="sest-mb-2 sest-center-vertical sest-mr-3">
+          <mat-radio-button [value]="type" *ngFor="let type of tableTypes" class="sest-mx-2">
+            {{ type }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="sest-flex-row">
+        <div class="sest-small-border sest-flex-1 sest-flex-column sest-p-1">
+          <h3 class="sest-border-title">Correção de mesa rotativa:</h3>
+          <input matInput [(ngModel)]="correctionRotaryTable" class="sest-border-0">
+        </div>
+        <mat-icon matSuffix color="primary" class="sest-center sest-medium-icon sest-ml-1" #icon
+          [matMenuTriggerFor]="infoMesaRotativa" #trigger="matMenuTrigger" (mouseenter)="infoTriggerEnter(trigger)">
+          info
+        </mat-icon>
+        <mat-menu #infoMesaRotativa="matMenu" overlapTrigger>
+          <div (mouseleave)="trigger.closeMenu()">
+            <div class="sest-tooltip-title">
+              Mesa rotativa do poço de projeto
+            </div>
+            <div class="sest-tooltip-text sest-mx-2">
+              Os perfis de gradientes importados por cota terão seus valores ajustados pela mesa rotativa do poço
+              corrente.
+            </div>
+          </div>
+        </mat-menu>
+      </div>
+    </div>
+    <div class="sest-flex-column sest-small-border sest-flex-1 sest-mt-1 sest-p-1 sest-pb-2 sest-mb-2 traj-container"
+      [ngClass]="{'table-medium': hasFields }" [class.hidden]="tableTrajectoriesData.length === 0">
+      <h3 class="sest-border-title">Trajetórias</h3>
+      <div class="sest-flex-1 sest-flex-column sest-scroll prevent-overflow-x">
+        <small><strong>OBS:</strong> uma única trajetória pode ser selecionada.</small>
+        <div class="table-container">
+          <hot-table #traj [data]="tableTrajectoriesData" [colHeaders]="colTrajectoriesHeaders"
+            [columns]="columnsTrajectoriesTypes" [options]="trajectoryTableOptions">
+          </hot-table>
+        </div>
+      </div>
+    </div>
+    <div class="sest-flex-column sest-small-border sest-flex-1 sest-mt-1 sest-p-1 sest-pb-2 sest-mb-2 table-medium">
+      <h3 class="sest-border-title">Litologias</h3>
+      <div class="sest-flex-1 sest-flex-column prevent-overflow-x">
+        <hot-table #litho [data]="tableLithosData" [colHeaders]="colLithosHeaders" [columns]="columnsLithosTypes"
+          [options]="lithosTableOptions">
+        </hot-table>
+      </div>
+    </div>
+    <div class="sest-flex-column sest-small-border sest-flex-1 sest-mt-1 sest-p-1 table-large">
+      <h3 class="sest-border-title">Perfis</h3>
+      <div class="sest-flex-1 sest-flex-column sest-scroll">
+        <hot-table #prof [data]="tableProfilesData" [colHeaders]="colProfilesHeaders" [columns]="columnsProfilesTypes"
+          [options]="profilesTableOptions">
+        </hot-table>
+      </div>
+    </div>
+  </div>
+</div>

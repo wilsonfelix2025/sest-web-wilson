@@ -1,0 +1,30 @@
+<div class="sest-notification-sidenav" fxLayout="column" fxFlexFill>
+  <mat-tab-group fxFlex>
+    
+    <mat-tab i18n-label label="Notificações">
+      <div class="sest-notification-notifications">
+        <h2 class="sest-notifications-header">Hoje</h2>
+        <mat-card class="sest-notifications-notification mat-elevation-z">
+          <mat-card-header>
+            <mat-icon fontSet="fa" fontIcon="fa-comment" matCardAvatar class="sest-notifications-message"></mat-icon>
+            <mat-card-title><strong>Mensagem</strong></mat-card-title>
+            <h5 class="mat-caption">
+              5 min atrás
+              <mat-icon>clear</mat-icon>
+            </h5>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="mat-body-2">Novo Poço</p>
+            O poço 3-RJS-723 foi criado com sucesso.
+          </mat-card-content>
+        </mat-card>
+        
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+  <mat-toolbar class="sest-right-side-menu-bootom-toolbar">
+    <a mat-icon-button (click)="sidenav.close()">
+      <mat-icon>chevron_right</mat-icon>
+    </a>
+  </mat-toolbar>
+</div>

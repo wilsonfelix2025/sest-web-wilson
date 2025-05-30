@@ -1,0 +1,67 @@
+@import '~sass/utils';
+
+::ng-deep .mat-menu-panel {
+  min-height: auto !important;
+}
+
+.mat-list-base .mat-list-item.mat-list-item-with-avatar, .mat-list-base .mat-list-option.mat-list-item-with-avatar {
+  height: 30px;
+}
+
+.button-left {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.top-mat-icon {
+  color: #979797 !important;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+// Button
+.sest-canvas-menu-button {
+  padding: 0 10px;
+}
+
+.sest-canvas-menu-button__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+// .sest-canvas-menu-button__username {
+//   margin: 0 4px;
+//   font-size: 16px;
+//   color: #337ab7;
+// }
+
+// Menu header
+.sest-canvas-menu-header {
+  padding: 20px;
+}
+
+.sest-canvas-menu-header__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+  flex-shrink: 1;
+}
+
+.sest-canvas-menu-header__details {
+  h2, h3 {
+    margin: 0px;
+  }
+}
+
+.sest-canvas-menu-list {
+  padding-top: 0px;
+  .mat-icon {
+     @include sest-ui-icon-sizing(16px);
+     padding: 0 10px 0 0;
+  }
+}

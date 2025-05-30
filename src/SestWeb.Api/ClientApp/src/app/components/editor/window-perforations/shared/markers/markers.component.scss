@@ -1,0 +1,52 @@
+@import "~sass/essential";
+
+.mat-header-cell {
+    font-size: 12px !important;
+    color: #222;
+    font-weight: 600;
+}
+
+.mat-header-row {
+    background-color: #eee;
+    min-height: 25px;
+    font-weight: 600;
+    color: #222;
+}
+
+.mat-row {
+    min-height: 25px;
+    text-align: initial;
+}
+
+.option-img {
+    float: right;
+}
+
+.selectColor{
+    border: 0 !important;
+}
+
+.table-size {
+    height: 400px;
+}
+
+@mixin image($image) {
+    background:  url("assets/images/custom/"+$image)  right / contain no-repeat;
+    white-space: nowrap;
+    background-position: 90% 90%;
+}
+
+.Circulo { @include image("circulo.png"); }
+.Diamante { @include image("diamante.png"); }
+.Quadrado { @include image("quadrado.png"); }
+.Triangulo { @include image("triangulo.png"); }
+.Triangulo-invertido { @include image("triangulo-invertido.png"); }
+.Dois-circulos { @include image("pointball.png"); }
+.Triangulo-circulo { @include image("triangleball.png"); }
+.Cruz { @include image("cross-1.png"); }
+.Pescaria { @include image("fish-1.png"); }
+.Sol-rosa { @include image("sol-rosa.png"); }
+.Sol-laranja { @include image("sol-laranja.png"); }
+.Círculo-dividido { @include image("circulo-dividido.png"); }
+.Ponto-circulo { @include image("ponto-circulo.png"); }
+.Zig-Zag { @include image("zig-zag.png"); }

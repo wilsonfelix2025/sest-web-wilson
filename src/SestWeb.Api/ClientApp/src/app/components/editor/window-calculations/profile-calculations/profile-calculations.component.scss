@@ -1,0 +1,44 @@
+@import "~sass/essential";
+
+.max-width-parameters {
+    max-width: 420px;
+}
+
+.max-width-specific-parameters {
+    max-width: 700px;
+}
+
+.max-width-input {
+    max-width: 200px;
+}
+
+.sest-dialog-title {
+    margin: 0 0 10px !important;
+    padding: 10px !important;
+}
+
+.sest-dialog-bottom {
+    background-color: $project;
+    padding: 3px;
+    &:hover {
+        cursor: move;
+    }
+  }
+
+.page-profile-calculations {
+    .btn-height {
+        min-height: 100px;
+    }
+
+    .max-height-input {
+        max-height: 35px;
+    }
+    .max-width-button {
+        max-width: 60px;
+    }
+
+    .btn-medium {
+        font-size: 11px !important;
+        padding: 0 10px !important;
+    }
+}

@@ -1,0 +1,41 @@
+<mat-form-field class="sest-w-100" color="primary">
+  <input matInput placeholder="Pesquisar" [(ngModel)]="userSearch" (keyup)="search()">
+  <button mat-icon-button matSuffix *ngIf="userSearch" (click)="clearSearch()">
+    <mat-icon class="sest-medium-icon">close</mat-icon>
+  </button>
+  <button mat-icon-button matSuffix (click)="search()">
+    <mat-icon class="sest-medium-icon">search</mat-icon>
+  </button>
+</mat-form-field>
+<div class="sest-flex-column sest-small-border sest-p-1 sest-mb-3">
+  <h3 class="sest-border-title">Caso selecionado:</h3>
+  <div *ngIf="selectedFile === undefined" class="sest-m-1 sest-mb-2">
+    Nenhum caso selecionado. Escolha um item da pesquisa.
+  </div>
+  <button mat-stroked-button class="sest-p-2 sest-m-1" *ngIf="selectedFile !== undefined">
+    <div class="sest-flex-row sest-text-left">
+      <div class="sest-flex-1 sest-flex-column sest-mx-2">
+        <h3 class="sest-m-0 sest-small-line">{{selectedFile.name}}</h3>
+      </div>
+      <button mat-icon-button (click)="unselect()" class="sest-center-vertical sest-small-button sest-small-icon">
+        <mat-icon class="sest-small-icon">close</mat-icon>
+      </button>
+    </div>
+  </button>
+</div>
+<div class="sest-small-border sest-p-1">
+  <h3 class="sest-border-title">Resultados da Pesquisa:</h3>
+  <div class="sest-flex-column height-250 sest-flex-1">
+    <div *ngIf="filtredFilesList.length < 1" class="sest-mx-2">
+      Nenhum resultado encontrado.
+    </div>
+    <button mat-stroked-button class="sest-p-2 sest-m-1" *ngFor="let item of filtredFilesList"
+      (click)="selectSearchResult(item)">
+      <div class="sest-flex-row sest-text-left">
+        <div class="sest-flex-1 sest-flex-column sest-mx-2">
+          <h3 class="sest-m-0 sest-small-line">{{item.name}}</h3>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="sest-flex-column sest-small-border sest-p-1 sest-mb-3 sest-mt-1">
+  <h3 class="sest-border-title">Conjunto de Dados</h3>
+
+  <div class="sest-flex-column table">
+    <div class="sest-mb-2 sest-flex-row" *ngIf="cota">
+      <div class="sest-flex-item-equal sest-center sest-flex-row">
+        <mat-radio-group [(ngModel)]="tableDeepType" (change)="changedTableDeepType()" class="sest-center-vertical">
+          <mat-radio-button [value]="type" *ngFor="let type of tableDeepTypes" class="sest-mx-2">
+            {{ type }}
+          </mat-radio-button>
+        </mat-radio-group>
+        <div class="sest-flex-row">
+
+          <div class="sest-small-border sest-flex-1 sest-flex-column sest-p-1">
+            <h3 class="sest-border-title">Correção de mesa rotativa:</h3>
+            <input matInput [(ngModel)]="rotaryTable" (change)="rotaryTableChange.emit(rotaryTable)"
+              class="sest-border-0">
+          </div>
+          <mat-icon matSuffix color="primary" class="sest-center sest-large-icon sest-ml-1"
+            [matMenuTriggerFor]="infoMesaRotativa">
+            info
+          </mat-icon>
+          <mat-menu #infoMesaRotativa="matMenu">
+            <div class="sest-tooltip-title">
+              Mesa rotativa do poço de projeto
+            </div>
+            <div class="sest-tooltip-text sest-mx-2">
+              Os perfis de gradientes importados por cota terão seus valores ajustados pela mesa rotativa do poço
+              corrente.
+            </div>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="sest-flex-row sest-small-font">
+        <div class="sest-flex-column sest-mx-2">
+          <div>
+            PM Máx: <b>{{dadosPoco.pmMax}}</b>
+          </div>
+          <div>
+            PM Sup: <b>{{dadosPoco.pmSup}}</b>
+          </div>
+        </div>
+        <div class="sest-flex-column sest-mx-2">
+          <div>
+            Cota Final: <b>{{dadosPoco.cotaFinal}}</b>
+          </div>
+          <div>
+            Cota Sup: <b>{{dadosPoco.cotaSup}}</b>
+          </div>
+          <div *ngIf="dadosPoco.cotaFinal !== dadosPoco.cotaMax">
+            Cota Máx: <b>{{dadosPoco.cotaMax}}</b>
+          </div>
+        </div>
+        <mat-icon color="primary" class="sest-center sest-large-icon" [matMenuTriggerFor]="infoPM">
+          info
+        </mat-icon>
+        <mat-menu #infoPM="matMenu">
+          <div class="sest-tooltip-title sest-project-color">
+            Legenda:
+          </div>
+          <div class="sest-tooltip-text sest-mx-2">
+            <b>PM Máx:</b> Profundidade final do poço
+            <br />
+            <b>PM Sup:</b> Profundidade da superfície de sedimentos
+          </div>
+        </mat-menu>
+      </div>
+    </div>
+    <div class="sest-scroll sest-flex-1">
+      <hot-table [options]="options" (afterOnCellMouseDown)="afterOnCellMouseDown($event)"
+        (afterChange)="afterChangeTableEvent($event)" (afterCreateCol)="afterCreateColEvent($event)">
+      </hot-table>
+    </div>
+  </div>
+</div>

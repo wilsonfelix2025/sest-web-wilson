@@ -1,0 +1,21 @@
+@import '~sass/utils';
+
+@mixin sest-menu-tree-theme($theme, $typography) {
+
+  $project: map-get($mat-petro, 600);
+  $monitoring: map-get($mat-petro, 800);
+  $correlaction: map-get($mat-petro, 900);
+
+  .mat-menu-content {
+    .Projeto .node-tree .mat-tree-node .node-tree-button .mat-icon-rtl-mirror {
+      color: $project !important;
+    }
+    .Monitoramento .node-tree .mat-tree-node .node-tree-button .mat-icon-rtl-mirror {
+      color: $monitoring !important;
+    }
+    .Retroanalise .node-tree .mat-tree-node .node-tree-button .mat-icon-rtl-mirror {
+      color: $correlaction !important;
+    }
+  }
+
+}

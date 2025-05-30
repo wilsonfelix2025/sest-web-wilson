@@ -1,0 +1,41 @@
+<!-- top toolbar -->
+<sest-top-horizontal-menu [leftSidenav]="leftSidenav" [rightSidenav]="rightSidenav"></sest-top-horizontal-menu>
+
+<!-- breadcrumb -->
+<sest-breadcrumb class="sest-breadcrumb"></sest-breadcrumb>
+
+<mat-sidenav-container class="home-sidenav" fxFlexFill>
+
+  <!-- left side navigation -->
+  <mat-sidenav #leftSidenav class="sest-root-leftsidenav" [mode]="leftSidenavMode" [(opened)]="leftSidenavOpen"
+    [class.is-closed]="!leftSidenavOpen" (openedChange)="justMargin()">
+    <sest-data-tree [sidenav]="leftSidenav"></sest-data-tree>
+  </mat-sidenav>
+
+  <!-- right side navigation -->
+  <mat-sidenav #rightSidenav class="sest-root-rightsidenav" opened="false" position="end">
+    <sest-notification-sidenav [sidenav]="rightSidenav"></sest-notification-sidenav>
+  </mat-sidenav>
+
+  <!-- root container -->
+  <div fxLayout="column" fxFlexFill>
+    <!-- root content -->
+    <div fxLayout="column" fxFlex="nogrow noshrink" class="sest-root-content-wrapper sest-content-bg">
+      <div class="sest-root-content" fxFlexFill>
+
+        <!-- router-outlet -->
+        <sest-toolbar (eventChange)="onChange($event)"></sest-toolbar>
+
+        <router-outlet></router-outlet>
+
+        <sest-statusbar [event]="event"></sest-statusbar>        
+        <!-- <sest-main-content></sest-main-content> -->
+
+      </div>
+    </div>
+  </div>
+
+</mat-sidenav-container>
+
+<sest-layout-loader></sest-layout-loader>
+<sest-notybar></sest-notybar>

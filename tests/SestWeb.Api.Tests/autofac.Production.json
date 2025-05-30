@@ -1,0 +1,18 @@
+{
+  "defaultAssembly": "SestWeb.Infra",
+  "modules": [
+    {
+      "type": "SestWeb.Api.Module, SestWeb.Api"
+    },
+    {
+      "type": "SestWeb.Infra.ApplicationModule"
+    },
+    {
+      "type": "SestWeb.Infra.MongoDataAccess.Module",
+      "properties": {
+        "ConnectionString": "mongodb://BDubuntu.gtep.civ.puc-rio.br:27017",
+        "DatabaseName": "sestweb-integration-test"
+      }
+    }
+  ]
+}

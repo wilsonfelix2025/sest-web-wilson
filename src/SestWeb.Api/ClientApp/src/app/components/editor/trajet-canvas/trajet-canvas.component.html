@@ -1,0 +1,38 @@
+<mat-card-header fxLayoutAlign="space-evenly center" class="graph-header-height trajet-margin-left">
+    <div class="canvas-menu">
+        <a [mat-menu-trigger-for]="canvasDetailsMenu" class="button-left">
+            <mat-icon class="top-mat-icon"> more_vert </mat-icon>
+        </a>
+        <mat-menu #canvasDetailsMenu="matMenu">
+            <button mat-menu-item (click)="openDialogEditWidth()">Alterar Largura...</button>
+            <button mat-menu-item (click)="hideDiameters()">Ocultar / Exibir Diâmetros</button>
+            <button mat-menu-item [mat-menu-trigger-for]="download">
+                <mat-icon>get_app</mat-icon>
+                Download...
+            </button>
+        </mat-menu>
+        <mat-menu #download="matMenu">
+            <button mat-menu-item (click)="exportChart('image/jpeg')">
+                <span>Imagem JPEG</span>
+            </button>
+            <button mat-menu-item (click)="exportChart('image/png')">
+                <span>Imagem PNG</span>
+            </button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item (click)="exportChart('application/pdf')">
+                <span>Arquivo PDF</span>
+            </button>
+            <a mat-menu-item [href]="csv" [download]="'trajetoria.csv'">
+                <span>Tabela CSV</span>
+            </a>
+        </mat-menu>
+    </div>
+    <mat-card-title class="trajetTitle">
+        Trajetória (m) &nbsp; <span>Âng Proj - 0.0°</span>  
+    </mat-card-title>
+</mat-card-header>
+<mat-card-content fxLayoutAlign="center" (mousemove)="sync.synchronize($event)" (touchmove)="sync.synchronize($event)"
+    (touchstart)="sync.synchronize($event)" (mouseleave)="sync.onMouseOutCrossline($event)">
+    <highcharts-chart [Highcharts]="Highcharts" [options]="trajectoryOptions" (mouseleave)="sync.onMouseOut($event)"
+        (chartInstance)="onLoad($event)"></highcharts-chart>
+</mat-card-content>

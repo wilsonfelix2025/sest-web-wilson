@@ -1,0 +1,94 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+  class="sest-dialog-title sest-flex-row">
+  <div class="sest-flex-0">
+    <img src="assets/images/icons/importar.svg">
+  </div>
+  <div class="sest-flex-1 sest-mx-3">
+    Adicionar caso
+  </div>
+</div>
+<mat-dialog-content class="prevent-overflow">
+  <mat-form-field class="sest-w-100" color="primary">
+    <input matInput placeholder="Pesquisar" [(ngModel)]="userSearch" (keyup)="search()">
+    <button mat-icon-button matSuffix *ngIf="userSearch" (click)="clearSearch()">
+      <mat-icon class="sest-medium-icon">close</mat-icon>
+    </button>
+    <button mat-icon-button matSuffix (click)="search()">
+      <mat-icon class="sest-medium-icon">search</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="sest-flex-column sest-small-border sest-p-1 sest-mb-3">
+    <h3 class="sest-border-title">Caso selecionado:</h3>
+    <div *ngIf="selectedCase === undefined" class="sest-m-1 sest-mb-2">
+      Nenhum caso selecionado, escolha um item na pesquisa.
+    </div>
+    <button mat-stroked-button class="sest-p-2 sest-m-1" *ngIf="selectedCase !== undefined">
+      <div class="sest-flex-row sest-text-left">
+        <mat-icon class="fa fa-file-alt sest-small-icon sest-center-vertical" [ngClass]="{'sest-project-color': selectedCase['tipoPoço'] === 'Projeto',
+              'sest-monit-color': selectedCase['tipoPoço'] === 'Monitoramento', 
+              'sest-retro-color': selectedCase['tipoPoço'] === 'Retroanalise'}">
+        </mat-icon>
+        <div class="sest-flex-1 sest-flex-column sest-mx-2 sest-center-vertical">
+          <h3 class="sest-m-0">{{selectedCase.nome}}</h3>
+        </div>
+        <div class="sest-center-vertical sest-mx-1 font-11">
+          <h3 class="sest-m-0 sest-project-color" *ngIf="selectedCase['tipoPoço'] === 'Projeto'">
+            PROJETO
+          </h3>
+          <h3 class="sest-m-0 sest-monit-color" *ngIf="selectedCase['tipoPoço'] === 'Monitoramento'">
+            MONITORAMENTO
+          </h3>
+          <h3 class="sest-m-0 sest-retro-color" *ngIf="selectedCase['tipoPoço'] === 'Retroanalise'">
+            CORRELAÇÃO
+          </h3>
+        </div>
+        <button mat-icon-button (click)="unselect()" class="sest-center-vertical sest-small-button sest-small-icon">
+          <mat-icon class="sest-small-icon">close</mat-icon>
+        </button>
+      </div>
+    </button>
+  </div>
+  <div class="sest-small-border sest-p-1">
+    <h3 class="sest-border-title">Resultados da Pesquisa:</h3>
+    <div class="sest-flex-column height-250 sest-flex-1">
+      <div *ngIf="filteredCaseList.length < 1" class="sest-mx-2">
+        Nenhum resultado encontrado.
+      </div>
+
+      <button mat-stroked-button class="sest-p-2 sest-m-1" *ngFor="let item of filteredCaseList"
+        (click)="selectSearchResult(item)">
+        <div class="sest-flex-row sest-text-left">
+          <mat-icon class="fa fa-file-alt sest-small-icon sest-center-vertical" [ngClass]="{'sest-project-color': item['tipoPoço'] === 'Projeto',
+            'sest-monit-color': item['tipoPoço'] === 'Monitoramento', 
+            'sest-retro-color': item['tipoPoço'] === 'Retroanalise'}">
+          </mat-icon>
+          <div class="sest-flex-1 sest-flex-column sest-mx-2 sest-center-vertical">
+            <h3 class="sest-m-0">{{item.nome}}</h3>
+          </div>
+          <div class="sest-center-vertical sest-mx-1 font-11">
+            <h3 class="sest-m-0 sest-project-color" *ngIf="item['tipoPoço'] === 'Projeto'">
+              PROJETO
+            </h3>
+            <h3 class="sest-m-0 sest-monit-color" *ngIf="item['tipoPoço'] === 'Monitoramento'">
+              MONITORAMENTO
+            </h3>
+            <h3 class="sest-m-0 sest-retro-color" *ngIf="item['tipoPoço'] === 'Retroanalise'">
+              CORRELAÇÃO
+            </h3>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close (click)="onNoClick()" class="sest-light-gray">
+    Cancelar
+  </button>
+  <div class="sest-flex-1 sest-px-1"></div>
+
+  <button (click)="submit()" mat-stroked-button color="primary" [disabled]="loading || selectedCase === undefined">
+    Adicionar
+  </button>
+</mat-dialog-actions>

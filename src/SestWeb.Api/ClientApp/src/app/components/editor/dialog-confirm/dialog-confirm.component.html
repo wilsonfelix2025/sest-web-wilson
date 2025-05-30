@@ -1,0 +1,20 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-1 sest-mx-2">
+        {{ title }}
+    </div>
+</div>
+
+<mat-dialog-content>
+    {{ description }}
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button (click)="onNoClick()">
+        Não
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button (click)="submit()" mat-stroked-button color="primary">
+        Sim
+    </button>
+</mat-dialog-actions>

@@ -1,0 +1,19 @@
+@import "~sass/essential";
+
+.width-300 {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
+.bg-gray,
+.bg-gray:hover{
+    background: $gray-100;
+}
+.bg-white,
+.bg-gray:hover{
+    background: white !important;
+}

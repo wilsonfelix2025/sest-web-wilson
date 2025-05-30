@@ -1,0 +1,57 @@
+@import "~sass/essential";
+.table-full {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.table-large {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.table-small {
+  min-height: 72px;
+  max-height: 72px;
+}
+
+.table-medium {
+  min-height: 95px;
+  max-height: 95px;
+}
+
+.traj-container {
+  min-height: 120px;
+  max-height: 120px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mat-checkbox-disabled {
+  cursor: not-allowed;
+}
+
+.prevent-overflow-x {
+  overflow-x: hidden !important;
+}
+
+.prevent-overflow {
+  overflow: hidden !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.table-container {
+  max-height: 80px;
+}
+
+.sest-width-fileInfo {
+  width: 55vw !important;
+}
+
+.sest-add-backshift {
+  margin-top: 8px;
+}

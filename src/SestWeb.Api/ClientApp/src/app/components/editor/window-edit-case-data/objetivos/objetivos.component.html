@@ -1,0 +1,45 @@
+<div class="sest-flex-row">
+	<div class="sest-mx-2">
+		<div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column">
+			<h3 class="sest-border-title">Tipo:</h3>
+			<mat-select class="sest-px-1 sest-py-1" [(ngModel)]="typeSelected">
+				<mat-option>Selecione</mat-option>
+				<mat-option *ngFor="let el of types" [value]="el">
+					{{el}}
+				</mat-option>
+			</mat-select>
+		</div>
+		<div class="sest-small-border sest-p-1 sest-my-2 sest-flex-1 sest-flex-column">
+			<h3 class="sest-border-title">Profundidade:</h3>
+			<div class="sest-flex-row">
+				<input class="sest-border-0 sest-py-2 sest-px-1 sest-flex-1 sest-w-auto" [(ngModel)]="deepValue"
+					(keypress)="onKeyPress($event, deepValue)">
+				<span class="sest-light-opacity">metros</span>
+			</div>
+		</div>
+		<div class="sest-flex-row sest-mt-2">
+			<button (click)="addLine()" mat-stroked-button color="primary" class="sest-w-100 sest-mr-1">
+				<div class="sest-flex-column sest-center sest-mt-1">
+					<mat-icon class="sest-center">add_circle</mat-icon>
+					Adicionar
+				</div>
+			</button>
+			<button (click)="removeLine()" mat-stroked-button class="sest-w-100 sest-ml-1"
+				[ngClass]="{ 'color-dark-red': lineSelected.length > 0 }" [disabled]="lineSelected.length === 0">
+				<div class="sest-flex-column sest-center sest-mt-1">
+					<mat-icon class="sest-center">cancel</mat-icon>
+					Remover
+				</div>
+			</button>
+
+		</div>
+	</div>
+
+	<div class="sest-flex-column sest-small-border sest-flex-1 sest-mt-1 sest-p-1">
+		<div class="sest-scroll sest-flex-1">
+			<hot-table #table [data]="tableData" [colHeaders]="colHeaders" [columns]="columnsTypes"
+				[options]="tableOptions">
+			</hot-table>
+		</div>
+	</div>
+</div>

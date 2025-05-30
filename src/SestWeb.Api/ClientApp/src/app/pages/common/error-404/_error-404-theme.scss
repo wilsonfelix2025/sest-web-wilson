@@ -1,0 +1,18 @@
+@mixin sest-error-404-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $accent: map-get($theme, accent);
+  $primary: map-get($theme, primary);
+
+  .sest-error-404 {
+    h1 {
+      color: mat-color($primary, default);
+    }
+    mat-card-content {
+      background-color: mat-color($background, card);
+    }
+     &:before {
+      color: rgba(mat-color($accent, default-contrast), .1);
+    }
+  }
+}

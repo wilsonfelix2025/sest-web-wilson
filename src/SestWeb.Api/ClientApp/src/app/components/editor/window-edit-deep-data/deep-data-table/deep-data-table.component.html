@@ -1,0 +1,18 @@
+<div class="sest-flex-row">
+    <div class="sest-small-border sest-p-1 sest-mb-3 sest-flex-1 sest-flex-column">
+        <h3 class="sest-border-title">{{ tipos[tipo].tituloInputSuperior }}</h3>
+        <input class="sest-border-0 sest-py-1 sest-px-1 input-disable-style" disabled [(ngModel)]="dadoInputSuperior">
+    </div>
+</div>
+<div class="sest-flex-column sest-small-border sest-p-1">
+    <hot-table [options]="options" [data]="dataset" [colHeaders]="tipos[tipo].colHeaders"
+        [columns]="tipos[tipo].columnsTypes"></hot-table>
+</div>
+<div class="sest-flex-row">
+    <div class="sest-my-1 sest-flex-1 sest-flex-column">
+        <button mat-stroked-button color="primary" mat-dialog-close (click)="openWindowInsertData()"
+            [disabled]="calculado || !casoEditavel">
+            Editar
+        </button>
+    </div>
+</div>

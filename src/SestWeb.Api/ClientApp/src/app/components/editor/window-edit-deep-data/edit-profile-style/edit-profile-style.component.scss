@@ -1,0 +1,48 @@
+@import "~sass/essential";
+
+::ng-deep .color-picker .cp-remove-color-button-class {
+  box-shadow: none !important; 
+}
+
+::ng-deep .color-picker .cp-remove-color-button-class::before {
+  bottom: 9px !important;
+  font-weight: 700;
+}
+  
+input {
+    border: 0;
+    border-radius: 4px;
+}
+
+.option-img {
+    float: right;
+}
+
+@mixin image($image) {
+    background:  url("assets/images/custom/"+$image)  right / contain no-repeat;
+    white-space: nowrap;
+    background-position: 90% 90%;
+}
+.Espessura-1 { @include image("espessura-1.png"); }
+.Espessura-2 { @include image("espessura-2.png"); }
+.Espessura-3 { @include image("espessura-3.png"); }
+.Espessura-4 { @include image("espessura-4.png"); }
+.Espessura-5 { @include image("espessura-5.png"); }
+
+.Solid { @include image("estilo-1.png"); }
+.ShortDash { @include image("estilo-2.png"); }
+.ShortDot { @include image("estilo-3.png"); }
+.ShortDashDot { @include image("estilo-4.png"); }
+.ShortDashDotDot { @include image("estilo-5.png"); }
+.Dot { @include image("estilo-6.png"); }
+.Dash { @include image("estilo-7.png"); }
+.LongDash { @include image("estilo-8.png"); }
+.DashDot { @include image("estilo-9.png"); }
+.LongDashDot { @include image("estilo-10.png"); }
+.LongDashDotDot { @include image("estilo-11.png"); }
+
+.Circulo { @include image("circulo.png"); }
+.Diamante { @include image("diamante.png"); }
+.Quadrado { @include image("quadrado.png"); }
+.Triangulo { @include image("triangulo.png"); }
+.Triangulo-invertido { @include image("triangulo-invertido.png"); }

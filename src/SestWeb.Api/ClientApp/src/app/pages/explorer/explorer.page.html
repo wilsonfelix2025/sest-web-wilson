@@ -1,0 +1,31 @@
+<!-- top toolbar -->
+<sest-top-horizontal-menu [leftSidenav]="leftSidenav" [rightSidenav]="rightSidenav"></sest-top-horizontal-menu>
+
+<mat-sidenav-container fxFlexFill>
+  
+  <!-- left side navigation -->
+  <mat-sidenav #leftSidenav class="sest-explorer-leftsidenav" [mode]="leftSidenavMode" [(opened)]="leftSidenavOpen">
+    <sest-menu-sidenav class="sest-sidenav-theme" [sidenav]="leftSidenav"></sest-menu-sidenav>
+  </mat-sidenav>
+
+  <!-- right side navigation -->
+  <mat-sidenav #rightSidenav opened="false" position="end" class="sest-explorer-rightsidenav">
+    <sest-notification-sidenav [sidenav]="rightSidenav"></sest-notification-sidenav>
+  </mat-sidenav>
+
+  <!-- main content -->
+  <div fxLayout="column" fxFlexFill>
+
+    <!-- page content -->
+    <div fxLayout="column" fxFlex="nogrow noshrink" class="sest-explorer-content-wrapper sest-content-bg">
+      <div fxFlexFill class="sest-explorer-content" sestScrollTop>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    
+  </div>
+  
+</mat-sidenav-container>
+
+<sest-layout-loader></sest-layout-loader>
+<sest-notybar></sest-notybar>

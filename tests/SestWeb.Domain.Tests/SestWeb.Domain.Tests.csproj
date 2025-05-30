@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="6.0.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="NFluent" Version="2.7.0" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SestWeb.Domain\SestWeb.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ArquivosEntradaParaTestes\Jo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\Jo_Editado.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\Jo_trajetoria.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\Poço_projeto.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoCorreto.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoSemSônicoSuperficie.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComTipoDePerfilInexistente.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComPontoDePerfilInválido.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComValorDeLitologiaInexistente.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComValorDeLitologiaInválido.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoSemTrajetórias.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoSemDadosGerais.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoSemLitologias.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComPerfilSemUnidade.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoSemPerfis.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComTipoDePerfilInexistente.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ArquivosEntradaParaTestes\SestTR1\ArquivoComPerfilGenérico.xsrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

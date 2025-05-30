@@ -1,0 +1,8 @@
+<mat-card-header fxLayoutAlign="space-evenly center" class="graph-header-height">
+  <mat-card-title>{{title}}</mat-card-title>
+</mat-card-header>
+<mat-card-content fxLayoutAlign="center" (mousemove)="sync.synchronize($event)" (touchmove)="sync.synchronize($event)"
+  (touchstart)="sync.synchronize($event)" (mouseleave)="sync.onMouseOutCrossline($event)">
+  <highcharts-chart [Highcharts]="Highcharts" [options]="stratigraphyOptions" (mouseleave)="sync.onMouseOut($event)"
+    (chartInstance)="onLoad($event)"></highcharts-chart>
+</mat-card-content>

@@ -1,0 +1,7 @@
+@mixin sest-typography-theme($theme) {
+  $background: map-get($theme, background);
+
+  .sest-typography {
+    background: mat-color($background, app-bar);
+  }
+}

@@ -1,0 +1,55 @@
+.sest-toolbar-brand-text {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.list-icon {
+    margin-right: 10px;
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.toggle-icon {
+    color: #979797;
+    margin: -2px 0 0 -2px;
+    
+}
+
+.mat-toolbar-row {
+    min-height: 40px;
+    height: 40px;
+    padding: 0 21px;
+    
+    a {
+        width: 22px;
+        height: 22px;
+        border: solid 1px #979797;
+        line-height: 15px;
+    }
+}
+
+.mat-toolbar-multiple-rows {
+    min-height: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.sest-side-menu-bottom-toolbar {
+    padding: 0 10px;
+    font-weight: 600;
+
+    .mat-icon {
+        font-size: 20px !important;
+    }
+    
+    .sest-panel-bottom {
+        border: solid 1px #E8E7F4;
+        border-radius: 5px;
+        padding: 0 10px !important;
+    }
+
+    .sest-border-null {
+        border:0 !important;
+    }
+}

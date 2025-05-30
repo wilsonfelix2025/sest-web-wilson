@@ -1,0 +1,25 @@
+@import "~sass/essential";
+
+.sest-w-350 {
+    min-width: 310px;
+    max-width: 310px;
+}
+
+.sest-w-50 {
+    min-width: 40%;
+}
+
+.input-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input-item {
+    min-width: 125px;
+    max-width: 125px;
+}
+
+input:disabled {
+    background-color: #fff;
+}

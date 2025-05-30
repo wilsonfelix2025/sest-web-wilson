@@ -1,0 +1,21 @@
+<div class="sest-flex-row">
+    <div class="sest-small-border sest-p-1 sest-mr-2 sest-flex-colum sest-px-3 sest-align-center">
+        PM
+        <mat-slide-toggle [(ngModel)]="info.pv" (change)="mudarPv()" class="sest-light-gray sest-mx-2 sest-py-1">
+        </mat-slide-toggle>
+        PV
+    </div>
+    <div *ngIf="unidadeGlobal" class="sest-small-border sest-p-1 sest-ml-2 sest-flex-colum sest-px-3 sest-align-center">
+        lb/gal
+        <mat-slide-toggle [(ngModel)]="psi" (change)="mudarUnidade()" class="sest-light-gray sest-mx-2 sest-py-1">
+        </mat-slide-toggle>
+        psi
+    </div>
+</div>
+
+<div class="sest-flex-row">
+    <div class="sest-p-1 sest-mt-2 sest-flex-column sest-flex-1 sest-small-border">
+        <hot-table #table [options]="baseOptions" [data]="info.trechos" [colHeaders]="info.colHeaders"
+            [columns]="info.colTypes"></hot-table>
+    </div>
+</div>

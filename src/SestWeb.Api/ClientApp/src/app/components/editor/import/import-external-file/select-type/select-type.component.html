@@ -1,0 +1,60 @@
+<div class="sest-small-border sest-p-1 sest-mb-3">
+  <h3 class="sest-border-title">Importar</h3>
+  <div class="sest-flex-row sest-flex-1 import-types">
+    <mat-radio-group class="sest-flex-item-equal" [(ngModel)]="typesRadio[0]"
+      (change)="typesRadio[1] = undefined; change(typesRadio[0])">
+      <div class="sest-flex-column sest-center">
+        <mat-radio-button [value]="type" *ngFor="let type of importTypes">
+          {{type.name}}
+        </mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-radio-group class="sest-flex-item-equal sest-ml-2" [(ngModel)]="typesRadio[1]"
+      (change)="typesRadio[2] = undefined; change(typesRadio[1])">
+      <div class="sest-flex-column sest-center sest-flex-wrap max-import-types" *ngIf="typesRadio[0]">
+        <mat-radio-button [value]="type" *ngFor="let type of typesRadio[0].next" class="sest-mr-1"
+          [disabled]="type.next === undefined && type.page === undefined">
+          {{type.name}}
+        </mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-radio-group class="sest-flex-item-equal sest-ml-2" [(ngModel)]="typesRadio[2]"
+      (change)="change(typesRadio[2])">
+      <div class="sest-flex-column sest-center" *ngIf="typesRadio[1]">
+        <mat-radio-button [value]="type" *ngFor="let type of typesRadio[1].next">
+          {{type.name}}
+        </mat-radio-button>
+      </div>
+    </mat-radio-group>
+  </div>
+</div>
+<div class="sest-flex-column sest-small-border sest-p-1 sest-mb-3 sest-pb-2">
+  <h3 class="sest-border-title">Arquivo</h3>
+  <div class="sest-flex-row">
+    <div class="sest-small-border sest-flex-1 sest-mr-2 sest-p-1">
+      {{ fileName }}
+    </div>
+    <button mat-raised-button color="primary" (click)="uploadFileClicked()"
+      [disabled]="!typesRadio[0].fileRequired || selectedType.next !== undefined">Abrir</button>
+    <input #fileInput type="file" (change)="uploadFile($event.target.files); change(selectedType)"
+      [accept]="selectedType.extension">
+  </div>
+  <mat-progress-bar *ngIf="uploadProgress" mode="determinate" [value]="uploadProgress | async"
+    class="sest-mt-2 sest-w-auto">
+  </mat-progress-bar>
+</div>
+<div class="sest-flex-column sest-small-border sest-p-1 sest-mb-3 sest-pb-2">
+  <h3 class="sest-border-title">Dados existentes no poço</h3>
+  <div class="sest-flex-row sest-ml-2" *ngIf="currCase">
+    <div class="sest-flex-column sest-flex-wrap import-types sest-flex-1">
+      <div *ngFor="let data of caseDataValid">
+        <i class="sest-mr-2"
+          [ngClass]="{'sest-color-green fa fa-check': data.exist, 'sest-color-red fas fa-times': !data.exist}">
+        </i>
+        {{ data.name }}
+      </div>
+    </div>
+  </div>
+</div>

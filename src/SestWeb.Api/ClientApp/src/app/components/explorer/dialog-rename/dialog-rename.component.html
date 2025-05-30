@@ -1,0 +1,25 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+  class="sest-dialog-title sest-flex-row">
+  <div class="sest-flex-0">
+    <mat-icon class="sest-auto-size sest-center-vertical" fontSet="fa" fontIcon="fa-edit"></mat-icon>
+  </div>
+  <div class="sest-flex-1 sest-mx-2">
+    Renomear {{data.itemTypeInfo.label}}
+  </div>
+</div>
+
+<mat-dialog-content>
+  <mat-form-field class="sest-w-100" color="primary">
+    <input matInput placeholder="Digite o novo nome" [(ngModel)]="newName">
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close (click)="onNoClick()">
+    Cancelar
+  </button>
+  <div class="sest-flex-1 sest-px-1"></div>
+  <button mat-stroked-button color="primary" (click)="submit()" [disabled]="newName.length < 1 || loading">
+    Confirmar
+  </button>
+</mat-dialog-actions>

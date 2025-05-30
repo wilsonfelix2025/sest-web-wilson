@@ -1,0 +1,69 @@
+<div class="sest-flex-row">
+    <div class="sest-title-line sest-p-1 sest-my-3 sest-mx-2 sest-flex-1 sest-flex-column">
+        <h3 class="sest-medium-title">Resumo de Dados:</h3>
+    </div>
+</div>
+
+<div class="sest-flex-row">
+    <div class="sest-flex-column sest-small-border sest-mx-2 sest-flex-2 sest-width-180">
+        <h3 class="sest-border-title sest-border-center"><b>Perfis</b> identificados:</h3>
+        <table mat-table [dataSource]="profiles" class="mat-elevation-z0">
+            <!-- Nome Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> <b>Nome</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="oneColumn"></tr>
+            <tr mat-row *matRowDef="let row; columns: oneColumn;"></tr>
+        </table>
+    </div>
+
+    <div class="sest-flex-column sest-small-border sest-mx-2 sest-flex-2 sest-width-180">
+        <h3 class="sest-border-title sest-border-center"><b>Constantes</b> identificados:</h3>
+        <table mat-table [dataSource]="consts" class="mat-elevation-z0">
+            <!-- Nome Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> <b>Nome</b> </th>
+                <td mat-cell [class.sest-error]="!element.valid" *matCellDef="let element">
+                    {{element.name}}
+                </td>
+            </ng-container>
+
+            <!-- Valor Column -->
+            <ng-container matColumnDef="value">
+                <th mat-header-cell *matHeaderCellDef> <b>Valor</b> </th>
+                <td mat-cell [class.sest-error]="!element.valid" *matCellDef="let element">
+                    {{element.value}}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="twoColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: twoColumns;"></tr>
+        </table>
+    </div>
+    <div class="sest-flex-column sest-small-border sest-mx-2 sest-flex-2 sest-width-180">
+        <h3 class="sest-border-title sest-border-center"><b>Variáveis</b> identificados:</h3>
+        <table mat-table [dataSource]="vars" class="mat-elevation-z0">
+            <!-- Nome Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> <b>Nome</b> </th>
+                <td mat-cell [class.sest-error]="!element.valid" *matCellDef="let element">
+                    {{element.name}}
+                </td>
+            </ng-container>
+
+            <!-- Tipo Column -->
+            <ng-container matColumnDef="value">
+                <th mat-header-cell *matHeaderCellDef> <b>Valor</b> </th>
+                <td mat-cell [class.sest-error]="!element.valid" *matCellDef="let element">
+                    {{element.value}}
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="twoColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: twoColumns;"></tr>
+        </table>
+    </div>
+
+</div>

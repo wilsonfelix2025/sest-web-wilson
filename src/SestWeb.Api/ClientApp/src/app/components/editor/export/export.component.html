@@ -1,0 +1,38 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <i class="fas fa-file-export sest-center"></i>
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Exportar
+    </div>
+</div>
+
+<mat-dialog-content class="page-export">
+
+    <mat-tab-group [(selectedIndex)]="selected" fxFlexFill>
+        <mat-tab label="Perfis" fxFlexFill>
+            <sest-profiles-export class="sest-h-auto sest-w-100" #profile [currCase]="currCase"></sest-profiles-export>
+        </mat-tab>
+        <mat-tab label="Registros & Eventos">
+            <sest-records-export class="sest-h-auto sest-w-100" #register></sest-records-export>
+        </mat-tab>
+        <!-- <mat-tab label="Gerar Relatório">
+            <sest-report-export class="sest-h-auto sest-w-100" #report [currCase]="currCase"></sest-report-export>
+        </mat-tab> -->
+    </mat-tab-group>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button mat-dialog-close class="sest-light-gray" (click)="closeModal()">
+        Fechar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" *ngIf="selected === 2" (click)="visualizar()" [disabled]="loading">
+        Pré-visualizar
+    </button>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="loading">
+        Exportar
+    </button>
+</mat-dialog-actions>

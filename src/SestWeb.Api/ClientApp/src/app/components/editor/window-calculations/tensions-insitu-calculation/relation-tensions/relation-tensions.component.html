@@ -1,0 +1,58 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div class="sest-flex-0">
+        <img src="assets/images/calculos/tensoes.png" width="30">
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Perfil de relação entre tensões
+    </div>
+</div>
+
+<mat-dialog-content class="page-relation-tensions">
+    <div class="sest-flex-row">
+        <div class="sest-p-1 sest-my-1 sest-flex-1 sest-flex-column sest-small-border"
+            [ngClass]="{'sest-input-error': nomePerfil.tooltip.length > 0 }" [matTooltip]="nomePerfil.tooltip"
+            matTooltipClass="background-red">
+            <h3 class="sest-border-title">Nome do Perfil:</h3>
+            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100" [(ngModel)]="nomePerfil.value">
+        </div>
+        <div class="sest-flex-row sest-small-font sest-ml-1">
+            <mat-icon color="primary" class="sest-center sest-large-icon" [matMenuTriggerFor]="infoPM">
+                info
+            </mat-icon>
+            <mat-menu #infoPM="matMenu">
+                <div class="sest-tooltip-title sest-project-color">
+                    Legenda:
+                </div>
+                <div class="sest-tooltip-text sest-mx-2">
+                    <b>PM Máx:</b> Profundidade final do poço
+                    <br />
+                    <b>PM Sup:</b> Profundidade da superfície de sedimentos
+                </div>
+            </mat-menu>
+            <div class="sest-flex-column sest-ml-2">
+                <div>
+                    PM Máx: <b>{{dadosPoco.pmMax}}</b>
+                </div>
+                <div>
+                    PM Sup: <b>{{dadosPoco.pmSup}}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sest-flex-row sest-flex-1 sest-small-border sest-p-1 sest-pt-2">
+        <hot-table #table [options]="options" [data]="tableData" [colHeaders]="colHeaders" [columns]="columnsTypes">
+        </hot-table>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button (click)="closeModal()" class="sest-light-gray">
+        Cancelar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button [disabled]="!isValid || loading" (click)="submit()" mat-stroked-button color="primary">
+        Ok
+    </button>
+</mat-dialog-actions>

@@ -1,0 +1,63 @@
+<div class="sest-scroll table-size">
+
+    <mat-table #table [dataSource]="dataSource" fxFlexFill>
+
+        <!-- Coluna Registro -->
+        <ng-container matColumnDef="events">
+            <mat-header-cell *matHeaderCellDef> {{tipo}}s </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.nome}} </mat-cell>
+        </ng-container>
+
+        <!-- Coluna Marcador -->
+        <ng-container matColumnDef="marker">
+            <mat-header-cell *matHeaderCellDef> Marcador </mat-header-cell>
+            <mat-cell class="sest-small-border sest-py-0 sest-my-2 sest-mx-1" *matCellDef="let element">
+                <mat-select class="{{element.marcador}} sest-px-1 sest-my-1 sest-mx-2 sest-w-100" [(ngModel)]="element.marcador">
+                    <mat-option *ngFor="let marcador of Marcadores" [value]="marcador.value"
+                        [disabled]="marcador.disabled">
+                        {{marcador.name}}
+                        <img *ngIf="marcador.avatar" class="option-img" [src]="marcador.avatar" height="35">
+                    </mat-option>
+                </mat-select>
+            </mat-cell>
+        </ng-container>
+
+        <!-- Coluna Cor do Marcador -->
+        <ng-container matColumnDef="markerColor">
+            <mat-header-cell *matHeaderCellDef> Cor do Marcador </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="sest-small-border sest-py-1 sest-my-2 sest-mx-1">
+                <input [style.background]="element.corDoMarcador" class="sest-px-1 sest-my-1 sest-mx-2 sest-w-100 selectColor"
+                    [(colorPicker)]="element.corDoMarcador" [cpOutputFormat]="'hex'"
+                    [cpPresetColors]="['#2889e9', '#ff0000', '#EBC934', '#187BC7', '#FF20A6', '#187BC7', '#ff6600', '#000000', '#000b9e', '#9C5821', '#D65A31', '#0DABD9', '#41d141', '#ff55ff', '#b1ffff', '#ffdd2c', '#0b9090', '#448ccb' ]"
+                    [cpCancelButton]="true" [cpDisableInput]="true" [cpAddColorButton]="false" [cpOKButton]="true"
+                    [cpAddColorButtonText]="'Salvar cor'" [cpCancelButtonText]="'Cancelar'" [cpOKButtonText]="'Aplicar'"
+                    [cpPresetLabel]="'Tabela de Cores:'" />
+            </mat-cell>
+        </ng-container>
+
+        <!-- Coluna Cor do Contorno -->
+        <ng-container matColumnDef="outlineColor">
+            <mat-header-cell *matHeaderCellDef> Cor do Contorno </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="sest-small-border sest-py-1 sest-my-2 sest-mx-1">
+                <input *ngIf="true" [style.background]="element.contornoDoMarcador"
+                    class="sest-px-1 sest-my-1 sest-mx-2 sest-w-100 selectColor" [(colorPicker)]="element.contornoDoMarcador"
+                    [cpOutputFormat]="'hex'"
+                    [cpPresetColors]="['#2889e9', '#ff0000', '#EBC934', '#187BC7', '#FF20A6', '#187BC7', '#ff6600', '#000000', '#000b9e', '#9C5821', '#D65A31', '#0DABD9', '#41d141', '#ff55ff', '#b1ffff', '#ffdd2c', '#0b9090', '#448ccb' ]"
+                    [cpCancelButton]="true" [cpDisableInput]="true" [cpAddColorButton]="false" [cpOKButton]="true"
+                    [cpAddColorButtonText]="'Salvar cor'" [cpCancelButtonText]="'Cancelar'" [cpOKButtonText]="'Aplicar'"
+                    [cpPresetLabel]="'Tabela de Cores:'" />
+            </mat-cell>
+        </ng-container>
+
+        <!-- Coluna Posição -->
+        <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef> Posição no track </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="sest-small-border sest-py-1 sest-my-2 sest-mx-1">
+                <input class="sest-px-1 sest-my-1 sest-mx-2 sest-w-100 selectColor" [(ngModel)]="element['valorPadrão']">
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>

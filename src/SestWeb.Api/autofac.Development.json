@@ -1,0 +1,21 @@
+{
+  "defaultAssembly": "SestWeb.Infra",
+  "modules": [
+    {
+      "type": "SestWeb.Infra.MongoDataAccess.Module, SestWeb.Infra",
+      "properties": {
+        "ConnectionString": "mongodb://host.docker.internal:27017",
+        "DatabaseName": "sest-dev"
+      }
+    },
+    {
+      "type": "SestWeb.Infra.Services.PocoWebModule, SestWeb.Infra",
+      "properties": {
+        "PocoWebUrl": "https://pocoweb.petro.intelie.net/api/public/"
+      }
+    },
+    { "type": "SestWeb.Application.ApplicationModule, SestWeb.Application" },
+    { "type": "SestWeb.Domain.DomainModule, SestWeb.Domain" },
+    { "type": "SestWeb.Api.Module, SestWeb.Api" }
+  ]
+}

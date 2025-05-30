@@ -1,0 +1,22 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+  class="sest-dialog-title sest-flex-row">
+  <div class="sest-flex-1 sest-mx-2">
+    Alterar Largura:
+  </div>
+</div>
+
+<mat-dialog-content>
+  <mat-slider class="sest-w-100 sest-mt-3" [max]="4" [min]="0.5" [step]="0.5" [thumbLabel]="true" [tickInterval]="1"
+    [(ngModel)]="width">
+  </mat-slider>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close (click)="onNoClick()">
+    Cancelar
+  </button>
+  <div class="sest-flex-1 sest-px-1"></div>
+  <button (click)="submit()" mat-stroked-button color="primary" type="submit">
+    Confirmar
+  </button>
+</mat-dialog-actions>

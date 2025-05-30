@@ -1,0 +1,69 @@
+<div mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragBoundary=".mat-typography" cdkDragHandle
+    class="sest-dialog-title sest-flex-row">
+    <div>
+        <mat-icon fontSet="far" fontIcon="fa-edit" class="sest-medium-icon"></mat-icon>
+    </div>
+    <div class="sest-flex-1 sest-mx-3">
+        Editar dados
+    </div>
+</div>
+
+<mat-dialog-content>
+    <div class="sest-flex-row" *ngIf="tipo === 'Perfil'">
+        <div class="sest-small-border sest-p-1 sest-mb-2 sest-mt-1 sest-flex-1 sest-flex-column">
+            <h3 class="sest-border-title">Perfil:</h3>
+            <input class="sest-border-0 sest-py-1 sest-px-1" disabled [value]="nome">
+        </div>
+    </div>
+
+    <div class="sest-small-border sest-flex-row sest-small-font sest-mb-2">
+        <div class="sest-flex-column sest-mx-2">
+            <div>
+                PM Máx: <b>{{dadosPoco.pmMax}}</b>
+            </div>
+            <div>
+                PM Sup: <b>{{dadosPoco.pmSup}}</b>
+            </div>
+        </div>
+        <div class="sest-flex-column sest-mx-2 sest-flex-1">
+            <div>
+                Cota Final: <b>{{dadosPoco.cotaFinal}}</b>
+            </div>
+            <div>
+                Cota Sup: <b>{{dadosPoco.cotaSup}}</b>
+            </div>
+            <div *ngIf="dadosPoco.cotaFinal !== dadosPoco.cotaMax">
+                Cota Máx: <b>{{dadosPoco.cotaMax}}</b>
+            </div>
+        </div>
+        <mat-icon color="primary" class="sest-center sest-mx-2 sest-large-icon" [matMenuTriggerFor]="infoPM">
+            info
+        </mat-icon>
+        <mat-menu #infoPM="matMenu">
+            <div class="sest-tooltip-title sest-project-color">
+                Legenda:
+            </div>
+            <div class="sest-tooltip-text sest-mx-2">
+                <b>PM Máx:</b> Profundidade final do poço
+                <br />
+                <b>PM Sup:</b> Profundidade da superfície de sedimentos
+            </div>
+        </mat-menu>
+    </div>
+
+    <div class="sest-flex-column sest-small-border sest-p-1">
+        <small><strong>OBS:</strong> para adicionar ou remover linhas na tabela, clique com o botão direito.</small>
+        <hot-table [options]="options" [data]="tableData" [colHeaders]="tipos[tipo].colHeaders"
+            [columns]="tipos[tipo].columnsTypes"></hot-table>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-stroked-button class="sest-light-gray" (click)="closeEditModal()">
+        Cancelar
+    </button>
+    <div class="sest-flex-1 sest-px-1"></div>
+    <button mat-stroked-button color="primary" (click)="submit()" [disabled]="loading">
+        Aplicar
+    </button>
+</mat-dialog-actions>

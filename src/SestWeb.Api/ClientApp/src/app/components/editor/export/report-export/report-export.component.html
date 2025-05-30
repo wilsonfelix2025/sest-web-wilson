@@ -1,0 +1,70 @@
+<div class="sest-small-border">
+
+    <div class="sest-flex-row">
+        <div class="sest-m-2 sest-mt-3 sest-p-1 sest-flex-column sest-flex-2 sest-small-border">
+            <h3 class="sest-border-title">Seleção de aba para relatório:</h3>
+
+            <mat-radio-group aria-labelledby="sest-radio-group-label" class="sest-radio-group"
+                [(ngModel)]="abaSelected">
+                <mat-radio-button class="sest-radio-button" *ngFor="let aba of abas;" [value]="aba">
+                    {{ aba.name }}
+                </mat-radio-button>
+            </mat-radio-group>
+
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-m-2 sest-pb-2 sest-p-1 sest-flex-column sest-flex-2 sest-small-border">
+            <h3 class="sest-border-title">Profundidade de referência:</h3>
+
+            <div class="sest-p-1 sest-mr-2 sest-flex-colum sest-px-3 sest-align-center">
+                PM
+                <mat-slide-toggle [(ngModel)]="pv" class="sest-light-gray sest-mx-2 sest-py-1"></mat-slide-toggle>
+                PV
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-my-2 sest-ml-3 sest-mr-1 sest-p-1 sest-pb-2 sest-flex-column sest-flex-2 sest-small-border">
+            <h3 class="sest-border-title">Dados básicos:</h3>
+
+            <div class="sest-flex-column" *ngFor="let el of dadosBasicos">
+                <label class="form-label" for="el{{el.name}}">
+                    <mat-checkbox [(ngModel)]="el.checked">
+                        {{el.name}}
+                    </mat-checkbox>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="sest-my-2 sest-ml-1 sest-mr-3 sest-pb-2 sest-p-1 sest-flex-column sest-flex-2 sest-small-border">
+            <h3 class="sest-border-title">Incluir:</h3>
+
+            <div class="sest-flex-column" *ngFor="let el of inclusionList">
+                <label class="form-label" for="el{{el.name}}">
+                    <mat-checkbox [(ngModel)]="el.checked"
+                        [disabled]="el.traject ? !el.enabled || !trajectChecked() : !el.enabled">
+                        {{el.name}}
+                    </mat-checkbox>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sest-flex-row">
+        <div class="sest-m-2 sest-mb-3 sest-p-1 sest-flex-column sest-flex-2 sest-small-border">
+            <h3 class="sest-border-title">Tipo de arquivo gerado:</h3>
+            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="fileSelected">
+                <mat-option *ngFor="let el of files" [value]="el">
+                    {{el.text}}
+                </mat-option>
+            </mat-select>
+        </div>
+    </div>
+
+</div>

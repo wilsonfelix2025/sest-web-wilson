@@ -1,0 +1,110 @@
+<div class="sest-flex-column sest-flex-1">
+
+    <div class="sest-flex-column sest-flex-1 sest-mr-1 sest-my-2">
+        <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border">
+            <h3 class="sest-border-title">Tensão Horizontal Maior:</h3>
+
+            <div class="sest-flex-row sest-mr-1 sest-my-2">
+                <div class="sest-p-1 sest-flex-1 sest-flex-column sest-small-border">
+                    <h3 class="sest-border-title">Metodologia de Cálculo:</h3>
+                    <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="metodologiaSelecionada">
+                        <mat-option *ngFor="let el of metodologias" [value]="tiposMetodologia[el]">
+                            {{tiposMetodologia[el].label}}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </div>
+
+            <div *ngIf="metodologiaSelecionada.value === tiposMetodologia.RelacaoTensoes.value">
+                <div class="sest-flex-row">
+                    <div matTooltipClass="background-red" [matTooltip]="perfis.RET.tooltip"
+                        [ngClass]="{'sest-input-error': perfis.RET.tooltip.length > 0 }"
+                        class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border">
+                        <h3 class="sest-border-title">{{ perfis.RET.titulo }}:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis.RET.selecionado">
+                            <mat-option *ngFor="let el of perfis.RET.lista" [value]="el">
+                                {{el.nome}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+
+                <button class="sest-my-2 sest-w-100" (click)="openWindowCriarPerfil()" mat-stroked-button
+                    color="primary">
+                    Criar perfil de RET
+                </button>
+
+                <div class="sest-flex-row">
+                    <div class="sest-p-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border tipoRelacao">
+                        <h3 class="sest-border-title">Tipo de relação:</h3>
+                        <mat-select class="sest-px-1 sest-w-100 inputRelacao"
+                            [(ngModel)]="metodologiaSelecionada.tipoRelacaoSelecionado">
+                            <mat-option *ngFor="let el of metodologiaSelecionada.tiposRelacao" [value]="el">
+                                <b>{{el.label}}</b>
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+
+                <div *ngIf="metodologiaSelecionada.tipoRelacaoSelecionado">
+                    <div class="sest-flex-row"
+                        *ngFor="let perfil of metodologiaSelecionada.tipoRelacaoSelecionado.perfis">
+                        <div matTooltipClass="background-red" [matTooltip]="perfis[perfil].tooltip"
+                            [ngClass]="{'sest-input-error': perfis[perfil].tooltip.length > 0 }"
+                            class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border">
+                            <h3 class="sest-border-title">{{ perfis[perfil].titulo }}:</h3>
+                            <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis[perfil].selecionado"
+                                [disabled]="perfisUsados[perfil]">
+                                <mat-option *ngFor="let el of perfis[perfil].lista" [value]="el">
+                                    {{el.nome}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="metodologiaSelecionada.value !== tiposMetodologia.RelacaoTensoes.value">
+                <div class="sest-flex-row" *ngFor="let perfil of metodologiaSelecionada.perfis">
+                    <div matTooltipClass="background-red" [matTooltip]="perfis[perfil].tooltip"
+                        [ngClass]="{'sest-input-error': perfis[perfil].tooltip.length > 0 }"
+                        class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border">
+                        <h3 class="sest-border-title">{{ perfis[perfil].titulo }}:</h3>
+                        <mat-select class="sest-px-1 sest-w-100" [(ngModel)]="perfis[perfil].selecionado"
+                            [disabled]="perfisUsados[perfil]">
+                            <mat-option *ngFor="let el of perfis[perfil].lista" [value]="el">
+                                {{el.nome}}
+                            </mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="metodologiaSelecionada.azthm !== undefined">
+                <div matTooltipClass="background-red" [matTooltip]="metodologiaSelecionada.azthm.tooltip"
+                    [ngClass]="{'sest-input-error': metodologiaSelecionada.azthm.tooltip.length > 0 }"
+                    class="sest-p-1 sest-mr-1 sest-my-2 sest-flex-column sest-flex-1 sest-small-border">
+                    <h3 class="sest-border-title">{{ metodologiaSelecionada.azthm.label }}:</h3>
+                    <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100"
+                        [(ngModel)]="metodologiaSelecionada.azthm.value">
+                </div>
+            </div>
+            <div *ngIf="metodologiaSelecionada.value !== tiposMetodologia.RelacaoTensoes.value" class="mt-3">
+                <hot-table [options]="options" [data]="metodologiaSelecionada.dataset"
+                    [colHeaders]="metodologiaSelecionada.colHeaders" [columns]="metodologiaSelecionada.columns">
+                </hot-table>
+            </div>
+        </div>
+        <div class="sest-p-1 sest-my-2 sest-flex-1 sest-flex-column sest-small-border sest-mt-3"
+            [ngClass]="{'sest-input-error': nomeCalculo.tooltip.length > 0 }" [matTooltip]="nomeCalculo.tooltip"
+            matTooltipClass="background-red">
+            <h3 class="sest-border-title">Nome do cálculo:</h3>
+            <input class="sest-border-0 sest-pt-1 sest-px-1 sest-w-100" [(ngModel)]="nomeCalculo.value">
+        </div>
+
+        <div class="sest-flex-column sest-flex-1" *ngIf="false">
+            <div fxLayoutAlign="center"
+                class="sest-p-1 sest-flex-1 sest-my-2 sest-ml-2 sest-flex-column sest-small-border">
+                <highcharts-chart [Highcharts]="Highcharts" [options]="ldaOptions"></highcharts-chart>
+            </div>
+        </div>
+    </div>
+</div>
